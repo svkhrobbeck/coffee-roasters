@@ -1,0 +1,11 @@
+.collection {
+  margin-top: 120px;
+
+  .collection__title {
+    text-align: center;
+    font-size: 150px;
+    background: -webkit-linear-gradient( #333 0%, #777 30%, #eee 60%,#eee 1000%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

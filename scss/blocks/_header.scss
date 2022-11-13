@@ -1,0 +1,85 @@
+.main-header {
+  position: sticky;
+  padding: 20px 0;
+
+  .header-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: $mobile) {
+      justify-content: center;
+    }
+
+    .logo {
+      position: relative;
+      z-index: 101;
+    }
+
+    #hamburger {
+      @media (max-width: $mobile) {
+        &:checked ~ .nav .nav__list {
+          transform: translate(0);
+        }
+
+        &:checked + .hamburger #menu {
+          display: none;
+        }
+
+        &:checked + .hamburger #close {
+          display: block;
+        }
+      }
+    }
+
+    #close,
+    #menu {
+      color: $black;
+      font-size: 40px;
+      position: fixed;
+      top: 20px;
+      left: 10px;
+      z-index: 101;
+      display: none;
+    }
+
+    #menu {
+      @media (max-width: $mobile) {
+        display: block;
+      }
+    }
+
+    .nav__list {
+      display: flex;
+      align-items: center;
+      gap: 33px;
+      list-style-type: none;
+
+      @media (max-width: $mobile) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transform: translate(-100%);
+        z-index: 100;
+        background-color: $white;
+        height: 100vh;
+        width: 40%;
+        padding: 55px 0 0 20px;
+        transition: 0.3s ease;
+      }
+    }
+
+    .nav__link {
+      text-decoration: none;
+      font: 12px "Barlow";
+      font-weight: 700;
+      line-height: 15px;
+      letter-spacing: 0.9px;
+      text-transform: uppercase;
+      color: $lighter-grey;
+    }
+  }
+}
