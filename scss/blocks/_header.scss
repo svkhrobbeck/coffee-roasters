@@ -92,6 +92,10 @@
       color: $lighter-grey;
       transition: .3s ease;
 
+      &--checked {
+        color: $black;
+      }
+
       &:hover, :focus {
         color: $black;
       }
