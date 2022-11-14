@@ -43,10 +43,55 @@
 
   .instructions-info {
     display: flex;
+    justify-content: space-between;
+    gap: 85px;
+    margin-top: 48px;
+
+    @media (max-width: $tablet-l) {
+      gap: 40px;
+    }
+
+    @media (max-width: $tablet) {
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      text-align: center;
+    }
   }
 
   .info-prepare {
-    max-width: 223px;
+    width: 300px;
+
+    @media (max-width: $tablet-l) {
+      width: 240px;
+    }
+
+    @media (max-width: $tablet) {
+      width: 224px;
+    }
+
+    @media (max-width: $tablet) {
+      width: 100%;
+    }
+
+    &:first-child {
+      margin-bottom: 64px;
+
+      @media (max-width: $tablet) {
+        margin: 0;
+      }
+    }
+    &:last-child {
+      margin-bottom: 64px;
+
+      @media (max-width: $tablet) {
+        margin-bottom: 64px;
+      }
+    }
   }
 
   .instructions-info__number {
@@ -57,17 +102,31 @@
   }
 
   .instructions-info__heading {
-    font-family: "Fraunces";
-    font-style: normal;
+    font: 26px "Fraunces";
     font-weight: 900;
-    font-size: 28px;
     line-height: 32px;
+    color: $primary-grey;
+    margin-top: 42px;
+
+    @media (max-width: $mobile) {
+      br {
+        display: none;
+      }
+    }
   }
 
   .instructions-info__text {
     font: 15px "Barlow";
     font-weight: 400;
     line-height: 25px;
-    color: $primary-green;
+    margin-top: 38px;
+    color: $primary-grey;
+  }
+
+  .instructions-link {
+    @media (max-width: $mobile) {
+      display: flex;
+      justify-content: center;
+    }
   }
 }

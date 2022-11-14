@@ -566,9 +566,61 @@ body {
 }
 .instructions .instructions-info {
   display: flex;
+  justify-content: space-between;
+  gap: 85px;
+  margin-top: 48px;
+}
+@media (max-width: 992px) {
+  .instructions .instructions-info {
+    gap: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .instructions .instructions-info {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 576px) {
+  .instructions .instructions-info {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 .instructions .info-prepare {
-  max-width: 223px;
+  width: 300px;
+}
+@media (max-width: 992px) {
+  .instructions .info-prepare {
+    width: 240px;
+  }
+}
+@media (max-width: 768px) {
+  .instructions .info-prepare {
+    width: 224px;
+  }
+}
+@media (max-width: 768px) {
+  .instructions .info-prepare {
+    width: 100%;
+  }
+}
+.instructions .info-prepare:first-child {
+  margin-bottom: 64px;
+}
+@media (max-width: 768px) {
+  .instructions .info-prepare:first-child {
+    margin: 0;
+  }
+}
+.instructions .info-prepare:last-child {
+  margin-bottom: 64px;
+}
+@media (max-width: 768px) {
+  .instructions .info-prepare:last-child {
+    margin-bottom: 64px;
+  }
 }
 .instructions .instructions-info__number {
   font: 72px "Fraunces";
@@ -577,15 +629,27 @@ body {
   color: #FDD6BA;
 }
 .instructions .instructions-info__heading {
-  font-family: "Fraunces";
-  font-style: normal;
+  font: 26px "Fraunces";
   font-weight: 900;
-  font-size: 28px;
   line-height: 32px;
+  color: #333D4B;
+  margin-top: 42px;
+}
+@media (max-width: 576px) {
+  .instructions .instructions-info__heading br {
+    display: none;
+  }
 }
 .instructions .instructions-info__text {
   font: 15px "Barlow";
   font-weight: 400;
   line-height: 25px;
-  color: #0E8784;
+  margin-top: 38px;
+  color: #333D4B;
+}
+@media (max-width: 576px) {
+  .instructions .instructions-link {
+    display: flex;
+    justify-content: center;
+  }
 }/*# sourceMappingURL=main.css.map */
