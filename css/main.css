@@ -392,12 +392,13 @@ body {
 }
 @media (max-width: 768px) {
   .features-container {
-    height: 570px;
+    height: 640px;
   }
 }
 @media (max-width: 576px) {
   .features-container {
-    height: 960px;
+    height: 900px;
+    padding-bottom: 20px;
   }
 }
 .features-container-content {
@@ -408,7 +409,7 @@ body {
 }
 @media (max-width: 576px) {
   .features-container-content {
-    padding: 100px 0 40px;
+    padding: 100px 10px 40px;
   }
 }
 .features-container__title {
@@ -424,27 +425,36 @@ body {
   line-height: 26px;
   color: #FEFCF7;
 }
-.features-container .features-cards {
+.features .features-cards {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
-  margin: 20px 45px 0;
+  margin: 0 45px 0;
+  transform: translateY(-200px);
 }
 @media (max-width: 768px) {
-  .features-container .features-cards {
+  .features .features-cards {
+    transform: translateY(-250px);
     width: 80%;
     margin: 0 10%;
   }
 }
-.features-container .features-card {
+@media (max-width: 576px) {
+  .features .features-cards {
+    transform: translateY(-450px);
+    width: 80%;
+    margin: 0 10%;
+  }
+}
+.features .features-card {
   max-width: 350px;
   background-color: #0E8784;
   border-radius: 8px;
   padding: 72px 48px 48px;
 }
 @media (max-width: 768px) {
-  .features-container .features-card {
+  .features .features-card {
     display: flex;
     align-items: center;
     gap: 55px;
@@ -454,35 +464,35 @@ body {
   }
 }
 @media (max-width: 576px) {
-  .features-container .features-card {
+  .features .features-card {
     display: block;
     padding: 72px 38px 50px;
   }
 }
-.features-container .features-card-image {
+.features .features-card-image {
   display: flex;
   justify-content: center;
 }
-.features-container .features-card-image .truck-mg {
+.features .features-card-image .truck-mg {
   margin: 10px 0;
 }
-.features-container .features-card-content {
+.features .features-card-content {
   width: 254px;
   text-align: center;
 }
 @media (max-width: 768px) {
-  .features-container .features-card-content {
+  .features .features-card-content {
     margin: 0;
     text-align: left;
     width: auto;
   }
 }
 @media (max-width: 576px) {
-  .features-container .features-card-content {
+  .features .features-card-content {
     text-align: center;
   }
 }
-.features-container .features-card__heading {
+.features .features-card__heading {
   font: 24px "Fraunces";
   font-weight: 900;
   line-height: 32px;
@@ -490,16 +500,16 @@ body {
   margin-top: 55px;
 }
 @media (max-width: 768px) {
-  .features-container .features-card__heading {
+  .features .features-card__heading {
     margin: 0;
   }
 }
 @media (max-width: 576px) {
-  .features-container .features-card__heading {
+  .features .features-card__heading {
     margin-top: 56px;
   }
 }
-.features-container .features-card__text {
+.features .features-card__text {
   font: 16px "Barlow";
   font-weight: 400;
   line-height: 26px;
@@ -507,7 +517,75 @@ body {
   margin-top: 24px;
 }
 @media (max-width: 768px) {
-  .features-container .features-card__text {
+  .features .features-card__text {
     font-size: 15px;
   }
+}
+
+.instructions {
+  margin-top: 150px;
+}
+.instructions__title {
+  font: 24px "Fraunces";
+  font-weight: 900;
+  line-height: 32px;
+  color: #83888F;
+}
+.instructions-decoration {
+  display: flex;
+  align-items: center;
+  margin-top: 80px;
+}
+@media (max-width: 576px) {
+  .instructions-decoration {
+    display: none;
+  }
+}
+.instructions-decoration .deco-ring {
+  display: inline-block;
+  border: 2px solid #0E8784;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+.instructions-decoration .deco-line {
+  display: inline-block;
+  width: 350px;
+  height: 2px;
+  background-color: #FDD6BA;
+}
+@media (max-width: 992px) {
+  .instructions-decoration .deco-line {
+    width: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .instructions-decoration .deco-line {
+    width: 210px;
+  }
+}
+.instructions .instructions-info {
+  display: flex;
+}
+.instructions .info-prepare {
+  max-width: 223px;
+}
+.instructions .instructions-info__number {
+  font: 72px "Fraunces";
+  font-weight: 900;
+  line-height: 72px;
+  color: #FDD6BA;
+}
+.instructions .instructions-info__heading {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 32px;
+}
+.instructions .instructions-info__text {
+  font: 15px "Barlow";
+  font-weight: 400;
+  line-height: 25px;
+  color: #0E8784;
 }/*# sourceMappingURL=main.css.map */

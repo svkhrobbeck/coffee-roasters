@@ -1,0 +1,73 @@
+.instructions {
+  margin-top: 150px;
+
+  &__title {
+    font: 24px "Fraunces";
+    font-weight: 900;
+    line-height: 32px;
+    color: $lighter-grey;
+  }
+
+  &-decoration {
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+
+    @media (max-width: $mobile) {
+      display: none;
+    }
+
+    .deco-ring {
+      display: inline-block;
+      border: 2px solid $primary-green;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+    }
+
+    .deco-line {
+      display: inline-block;
+      width: 350px;
+      height: 2px;
+      background-color: $primary-orange;
+
+      @media (max-width: $tablet-l) {
+        width: 300px;
+      }
+
+      @media (max-width: $tablet) {
+        width: 210px;
+      }
+    }
+  }
+
+  .instructions-info {
+    display: flex;
+  }
+
+  .info-prepare {
+    max-width: 223px;
+  }
+
+  .instructions-info__number {
+    font: 72px "Fraunces";
+    font-weight: 900;
+    line-height: 72px;
+    color: $primary-orange;
+  }
+
+  .instructions-info__heading {
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .instructions-info__text {
+    font: 15px "Barlow";
+    font-weight: 400;
+    line-height: 25px;
+    color: $primary-green;
+  }
+}

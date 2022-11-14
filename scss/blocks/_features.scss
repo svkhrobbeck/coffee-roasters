@@ -9,11 +9,12 @@
     position: relative;
 
     @media (max-width: $tablet) {
-      height: 570px;
+      height: 640px;
     }
 
     @media (max-width: $mobile) {
-      height: 960px;
+      height: 900px;
+      padding-bottom: 20px;
     }
 
     &-content {
@@ -23,7 +24,7 @@
       padding: 100px 0 0;
       
       @media (max-width: $mobile) {
-        padding: 100px 0 40px;
+        padding: 100px 10px 40px;
       }
     }
 
@@ -42,13 +43,25 @@
       color: $light;
     }
 
+    
+    }
+
     .features-cards {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       gap: 30px;
-      margin: 20px 45px 0;
+      margin: 0 45px 0;
+      transform: translateY(-200px);
+      
       @media (max-width: $tablet) {
+        transform: translateY(-250px);
+        width: 80%;
+        margin: 0 10%;
+      }
+      
+      @media (max-width: $mobile) {
+        transform: translateY(-450px);
         width: 80%;
         margin: 0 10%;
       }
@@ -125,6 +138,5 @@
           font-size: 15px;
         }
       }
-    }
   }
 }
