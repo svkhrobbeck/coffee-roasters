@@ -1,8 +1,15 @@
 .main-header {
-  position: fixed;
+  position: sticky;
   top: 0;
+  z-index: 40;
+  background-color: $white;
   padding: 20px 0;
 
+  
+  @media (max-width: $tablet) {
+    position: static;
+  }
+  
   .header-block {
     display: flex;
     align-items: center;
@@ -83,6 +90,11 @@
       letter-spacing: 0.9px;
       text-transform: uppercase;
       color: $lighter-grey;
+      transition: .3s ease;
+
+      &:hover, :focus {
+        color: $black;
+      }
     }
   }
 }
