@@ -19,6 +19,10 @@
     padding: 40px 0 0 30px;
   }
 
+  @media (max-width: $mobile) {
+    padding: 30px 10px 0;
+  }
+
   .hero-content {
     width: 50%;
 
@@ -28,6 +32,11 @@
 
     @media (max-width: $tablet) {
       width: 65%;
+    }
+
+    @media (max-width: $mobile) {
+      width: 100%;
+      text-align: center;
     }
   }
 
@@ -45,6 +54,11 @@
     @media (max-width: $tablet) {
       font-size: 48px;
       line-height: 48px;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 44px;
+      line-height: 44px;
     }
   }
 

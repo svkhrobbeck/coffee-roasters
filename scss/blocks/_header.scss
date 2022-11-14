@@ -1,5 +1,6 @@
 .main-header {
-  position: sticky;
+  position: fixed;
+  top: 0;
   padding: 20px 0;
 
   .header-block {
@@ -35,6 +36,8 @@
     #close,
     #menu {
       color: $black;
+      background-color: $white;
+      border-radius: 5px;
       font-size: 40px;
       position: fixed;
       top: 20px;

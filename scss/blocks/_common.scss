@@ -75,4 +75,9 @@ body {
   @media (max-width: $tablet) {
     padding: 13px 24px;
   }
+
+  @media (max-width: $mobile) {
+    padding: 12px 22px;
+    font-size: 14px;
+  }
 }

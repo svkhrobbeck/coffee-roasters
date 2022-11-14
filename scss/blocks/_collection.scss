@@ -3,9 +3,110 @@
 
   .collection__title {
     text-align: center;
-    font-size: 150px;
-    background: -webkit-linear-gradient( #333 0%, #777 30%, #eee 60%,#eee 1000%);
+    font-size: 132px;
+    background: -webkit-linear-gradient(
+      #333 0%,
+      #777 30%,
+      #eee 60%,
+      #eee 1000%
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    @media (max-width: $tablet-l) {
+      font-size: 105px;
+    }
+
+    @media (max-width: $tablet) {
+      font-size: 75px;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 45px;
+    }
+  }
+
+  .collection-pockets {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    transform: translateY(-55px);
+    
+    @media (max-width: $tablet) {
+      justify-content: center;
+      transform: translateY(-35px);
+    }
+    
+    @media (max-width: $mobile) {
+      transform: translateY(0);
+    }
+
+    .collection-pocket {
+      width: 255px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      @media (max-width: $tablet) {
+        width: 100%;
+        padding: 0 85px;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      @media (max-width: $mobile) {
+        width: auto;
+        max-width: 255px;
+        padding: 0;
+        display: block;
+      }
+
+      .collection-pocket-image {
+        width: 100%;
+
+        @media (max-width: $tablet) {
+          width: 50%;
+        }
+
+        @media (max-width: $mobile) {
+          width: 100%;
+        }
+
+        .collection-pocket__img {
+          width: 100%;
+        }
+      }
+
+      .collection-pocket-content {
+        width: 100%;
+        text-align: center;
+
+        @media (max-width: $tablet) {
+          text-align: left;
+          width: 50%;
+        }
+
+        @media (max-width: $mobile) {
+          text-align: center;
+          width: 100%;
+        }
+
+        .collection-pocket__heading {
+          font: 24px "Fraunces";
+          font-weight: 900;
+          line-height: 32px;
+          color: $primary-grey;
+        }
+
+        .collection-pocket__text {
+          font: 16px "Barlow";
+          font-weight: 400;
+          line-height: 26px;
+        }
+      }
+    }
   }
 }
