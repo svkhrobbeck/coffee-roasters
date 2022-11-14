@@ -1,0 +1,52 @@
+.address {
+  margin-top: 168px;
+
+  @media (max-width: $tablet) {
+    margin-top: 144px;
+  }
+
+  &__title {
+    font: 24px "Fraunces";
+    font-weight: 900;
+    line-height: 32px;
+    color: $lighter-grey;
+
+    @media (max-width: $mobile) {
+      text-align: center;
+    }
+  }
+  .countries {
+    margin-top: 72px;
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+    flex-wrap: wrap;
+
+    @media (max-width: $tablet) {
+      justify-content: center;
+    }
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .country {
+      &__heading {
+        font: 24px "Fraunces";
+        font-weight: 900;
+        line-height: 36px;
+        color: $primary-grey;
+      }
+
+      &__list {
+        list-style-type: none;
+        font: 16px "Barlow";
+        font-weight: 400;
+        color: $primary-grey;
+        line-height: 26px;
+      }
+    }
+  }
+}

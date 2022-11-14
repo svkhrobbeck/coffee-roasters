@@ -534,6 +534,11 @@ body {
   line-height: 32px;
   color: #83888F;
 }
+@media (max-width: 576px) {
+  .instructions__title {
+    text-align: center;
+  }
+}
 .instructions-decoration {
   display: flex;
   align-items: center;
@@ -1016,4 +1021,110 @@ body {
     border-radius: 8px;
     transform: translate(-50%);
   }
+}
+
+.address {
+  margin-top: 168px;
+}
+@media (max-width: 768px) {
+  .address {
+    margin-top: 144px;
+  }
+}
+.address__title {
+  font: 24px "Fraunces";
+  font-weight: 900;
+  line-height: 32px;
+  color: #83888F;
+}
+@media (max-width: 576px) {
+  .address__title {
+    text-align: center;
+  }
+}
+.address .countries {
+  margin-top: 72px;
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .address .countries {
+    justify-content: center;
+  }
+}
+@media (max-width: 576px) {
+  .address .countries {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+.address .countries .country__heading {
+  font: 24px "Fraunces";
+  font-weight: 900;
+  line-height: 36px;
+  color: #333D4B;
+}
+.address .countries .country__list {
+  list-style-type: none;
+  font: 16px "Barlow";
+  font-weight: 400;
+  color: #333D4B;
+  line-height: 26px;
+}
+
+.main-footer {
+  padding: 48px 0;
+  margin-top: 200px;
+  background-color: #333D4B;
+}
+.main-footer .footer-block {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .main-footer .footer-block {
+    flex-direction: column;
+    align-items: center;
+    gap: 34px;
+  }
+}
+.main-footer .footer-block .footer-nav__list {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: 33px;
+}
+@media (max-width: 576px) {
+  .main-footer .footer-block .footer-nav__list {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+.main-footer .footer-block .footer-nav__link {
+  text-decoration: none;
+  color: #83888F;
+  font: 12px "Barlow";
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+.main-footer .footer-block .footer-nav__link:hover {
+  color: #FEFCF7;
+}
+.main-footer .footer-block .footer-icons {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.main-footer .footer-block .footer-icons svg {
+  color: #FEFCF7;
+}
+.main-footer .footer-block .footer-icons svg:hover {
+  color: #FDD6BA;
 }/*# sourceMappingURL=main.css.map */

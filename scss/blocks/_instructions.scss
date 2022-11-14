@@ -6,6 +6,10 @@
     font-weight: 900;
     line-height: 32px;
     color: $lighter-grey;
+
+    @media (max-width: $mobile) {
+      text-align: center;
+    }
   }
 
   &-decoration {

@@ -1,60 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Create your plan</title>
-  <link
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create your plan</title>
+    <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/main.css" />
-</head>
-<body>
-   <!-- Header -->
-   <header class="main-header">
-    <div class="container">
-      <div class="header-block">
-        <!-- Logo -->
-        <div class="logo">
-          <h1>
-            <a href="index.html" class="logo__link">
-              <img
-                src="./img/logo.svg"
-                alt="logo"
-                height="26px"
-                class="logo__img"
-              />
-            </a>
-          </h1>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="main-header">
+      <div class="container">
+        <div class="header-block">
+          <!-- Logo -->
+          <div class="logo">
+            <h1>
+              <a href="index.html" class="logo__link">
+                <img
+                  src="./img/logo.svg"
+                  alt="logo"
+                  height="26px"
+                  class="logo__img"
+                />
+              </a>
+            </h1>
+          </div>
+
+          <input type="checkbox" id="hamburger" class="visually-hidden" />
+          <label for="hamburger" class="hamburger">
+            <i class="bx bx-x" id="close"></i>
+            <i class="bx bx-menu" id="menu"></i>
+          </label>
+
+          <!-- Navigation -->
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="index.html" class="nav__link">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="about.html" class="nav__link">About Us</a>
+              </li>
+              <li class="nav__item">
+                <a href="create-plan.html" class="nav__link nav__link--checked"
+                  >Create Your Plan</a
+                >
+              </li>
+            </ul>
+          </nav>
         </div>
-
-        <input type="checkbox" id="hamburger" class="visually-hidden" />
-        <label for="hamburger" class="hamburger">
-          <i class="bx bx-x" id="close"></i>
-          <i class="bx bx-menu" id="menu"></i>
-        </label>
-
-        <!-- Navigation -->
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="index.html" class="nav__link nav__link--checked">Home</a>
-            </li>
-            <li class="nav__item">
-              <a href="about.html" class="nav__link">About Us</a>
-            </li>
-            <li class="nav__item">
-              <a href="create-plan.html" class="nav__link"
-                >Create Your Plan</a
-              >
-            </li>
-          </ul>
-        </nav>
       </div>
-    </div>
-  </header>
-  <!-- /Header -->
-</body>
+    </header>
+    <!-- /Header -->
+  </body>
 </html>
