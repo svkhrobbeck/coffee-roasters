@@ -397,8 +397,7 @@ body {
 }
 @media (max-width: 576px) {
   .features-container {
-    height: auto;
-    padding: 0 0 10%;
+    height: 960px;
   }
 }
 .features-container-content {
