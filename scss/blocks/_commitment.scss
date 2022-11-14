@@ -1,0 +1,98 @@
+.commitment {
+  margin-top: 168px;
+  display: flex;
+  align-items: center;
+  gap: 125px;
+  justify-content: center;
+  
+  @media (max-width: $tablet-l) {
+    gap: 85px;
+  }
+  
+  @media (max-width: $tablet) {
+    gap: 65px;
+  }
+  
+  @media (max-width: $mobile) {
+    gap: 65px;
+    flex-direction: column;
+  }
+
+  &-image {
+    width: 40%;
+    @media (max-width: $tablet) {
+      width: 45%;
+    }
+
+    @media (max-width: $mobile) {
+      width: 100%;
+      height: auto;
+    }
+
+    .commitment__img {
+      width: 100%; 
+      border-radius: 8px;
+
+      @media (max-width: $tablet-l) {
+        object-fit: cover;
+        height: 550px;
+      }
+      
+      @media (max-width: $tablet) {
+        object-fit: cover;
+        height: 500px;
+      }
+
+      @media (max-width: $mobile) {
+        height: auto;
+        object-fit: contain;
+      }
+    }
+  }
+
+  &-content {
+    width: 40%;
+
+    @media (max-width: $tablet-l) {
+      width: 45%;
+    }
+
+    @media (max-width: $mobile) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__title {
+    font: 40px "Fraunces";
+    font-weight: 900;
+    line-height: 48px;
+    color: $primary-grey;
+
+    @media (max-width: $tablet-l) {
+      font-size: 36px;
+    }
+
+    @media (max-width: $tablet) {
+      font-size: 32px;
+    }
+
+    @media (max-width: $tablet) {
+      font-size: 28px;
+    }
+  }
+
+  &__description {
+    font: 16px "Barlow";
+    font-weight: 400;
+    line-height: 26px;
+    color: $primary-grey;
+    opacity: 0.8;
+    margin-top: 32px;
+
+    @media (max-width: $tablet) {
+      font-size: 15px;
+      line-height: 25px;
+    }
+  }
+}
