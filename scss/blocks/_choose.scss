@@ -1,0 +1,149 @@
+.choose {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 72px;
+
+  &-menu {
+    padding: 88px 0 0;
+    width: 25%;
+
+    @media (max-width: $tablet) {
+      display: none;
+    }
+
+    &__items {
+      list-style: none;
+      display: inline-block;
+    }
+
+    &__item {
+      padding: 24px;
+      padding-left: 0;
+      &:not(:last-child) {
+        border-bottom: 1px solid $lighter-grey;
+      }
+
+      &:first-child {
+        padding-top: 0;
+      }
+    }
+
+    &__link {
+      white-space: nowrap;
+      text-decoration: none;
+      font: 24px "Fraunces";
+      font-weight: 900;
+      line-height: 32px;
+      color: $primary-grey;
+      opacity: 0.5;
+      
+      span {
+        white-space: nowrap;
+        opacity: 0.4;
+      }
+
+      &:hover {
+        opacity: 0.8;
+
+        span {
+          opacity: 0.7;
+        }
+      }
+
+      &:focus {
+        opacity: 1;
+
+        span {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+
+  &-types {
+    width: 65%;
+
+    @media (max-width: $tablet) {
+      width: 100%;
+    }
+  }
+
+  &-type {
+    &-content {
+      display: flex;
+      justify-content: space-between;
+      padding: 88px 0 0;
+
+      
+    @media (max-width: $tablet) {
+      padding: 58px 0 0;
+    }
+    }
+
+    &__title {
+      font: 40px "Fraunces";
+      font-weight: 900;
+      line-height: 48px;
+      color: $lighter-grey;
+    }
+
+    .type-cards {
+      display: flex;
+      justify-content: center;
+      row-gap: 20px;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 56px;
+
+      @media (max-width: $tablet) {
+        flex-wrap: nowrap;
+        row-gap: 0;
+      }
+
+      
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      gap: 30px;
+    }
+    }
+  }
+
+  .type-card__input:checked + .type-card__content {
+    background-color: $primary-green;
+    transition: 0.3s ease;
+    
+    span {
+      transition: 0.3s ease;
+      color: $white;
+    }
+  }
+
+  .type-card__content {
+    max-width: 228px;
+    height: auto;
+    padding: 32px 25px 84px;
+    border-radius: 8px;
+    background-color: $capsule-color;
+    display: inline-flex;
+    flex-direction: column;
+
+    @media (max-width: $mobile) {
+      width: 100%;
+      max-width: none;
+    }
+
+    span:first-child {
+      font: 24px "Fraunces";
+      font-weight: 900;
+      line-height: 32px;
+      color: $primary-grey;
+    }
+
+    span:last-child {
+      font: 16px "Barlow";
+      font-weight: 400;
+      line-height: 26px;
+      color: $primary-grey;
+    }
+  }
+}

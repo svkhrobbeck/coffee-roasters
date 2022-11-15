@@ -120,6 +120,339 @@
         </div>
       </section>
       <!-- /Prepare section -->
+
+      <!-- Choose section -->
+      <section class="choose-section">
+        <div class="container">
+          <div class="choose">
+            <div class="choose-menu">
+              <ul class="choose-menu__items">
+                <li class="choose-menu__item">
+                  <a href="#preferences" class="choose-menu__link"
+                    ><span>01 </span>Preferences</a
+                  >
+                </li>
+                <li class="choose-menu__item">
+                  <a href="#bean-type" class="choose-menu__link"
+                    ><span>02 </span>Bean Type</a
+                  >
+                </li>
+                <li class="choose-menu__item">
+                  <a href="#quantity" class="choose-menu__link"
+                    ><span>03 </span>Quantity</a
+                  >
+                </li>
+                <li class="choose-menu__item">
+                  <a href="#grind-option" class="choose-menu__link"
+                    ><span>04 </span>Grind Option</a
+                  >
+                </li>
+                <li class="choose-menu__item">
+                  <a href="#deliveries" class="choose-menu__link"
+                    ><span>05 </span>Deliveries</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="choose-types">
+              <div class="choose-type" id="preferences">
+                <div class="choose-type-content">
+                  <h2 class="choose-type__title">
+                    How do you drink your coffee?
+                  </h2>
+                  <img
+                    src="./img/top-arrow-icon.svg"
+                    alt="arrow"
+                    width="18"
+                    class="choose-type__img"
+                  />
+                </div>
+                <div class="type-cards">
+                  <div class="type-card">
+                    <input
+                      type="radio"
+                      name="preferences"
+                      class="visually-hidden type-card__input"
+                      id="capsule"
+                    />
+                    <label for="capsule" class="type-card__content">
+                      <span>Capsule</span>
+                      <span
+                        >Compatible with Nespresso systems and similar
+                        brewers</span
+                      >
+                    </label>
+                  </div>
+                  <div class="type-card">
+                    <input
+                      type="radio"
+                      name="preferences"
+                      class="visually-hidden type-card__input"
+                      id="filter"
+                    />
+                    <label for="filter" class="type-card__content">
+                      <span>Filter</span>
+                      <span
+                        >For pour over or drip methods like Aeropress, Chemex,
+                        and V60</span
+                      >
+                    </label>
+                  </div>
+                  <div class="type-card">
+                    <input
+                      type="radio"
+                      name="preferences"
+                      class="visually-hidden type-card__input"
+                      id="espresso"
+                    />
+                    <label for="espresso" class="type-card__content">
+                      <span>Espresso</span>
+                      <span
+                        >Dense and finely ground beans for an intense, flavorful
+                        experience</span
+                      >
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="choose-type" id="bean-type">
+                <div class="choose-type-content">
+                  <h2 class="choose-type__title">What type of coffee?</h2>
+                  <img
+                    src="./img/top-arrow-icon.svg"
+                    alt="arrow"
+                    width="18"
+                    class="choose-type__img"
+                  />
+                </div>
+                <div class="type-cards">
+                  <div class="type-card">
+                    <input
+                      type="radio"
+                      name="bean-type"
+                      class="visually-hidden type-card__input"
+                      id="single-origin"
+                    />
+                    <label for="single-origin" class="type-card__content">
+                      <span>Single Origin</span>
+                      <span
+                        >Distinct, high quality coffee from a specific
+                        family-owned farm</span
+                      >
+                    </label>
+                  </div>
+                  <div class="type-card">
+                    <input
+                      type="radio"
+                      name="bean-type"
+                      class="visually-hidden type-card__input"
+                      id="decaf"
+                    />
+                    <label for="decaf" class="type-card__content">
+                      <span>Decaf</span>
+                      <span
+                        >Just like regular coffee, except the caffeine has been
+                        removed</span
+                      >
+                    </label>
+                  </div>
+                  <div class="type-card">
+                    <input
+                      type="radio"
+                      name="bean-type"
+                      class="visually-hidden type-card__input"
+                      id="blended"
+                    />
+                    <label for="blended" class="type-card__content">
+                      <span>Blended</span>
+                      <span
+                        >Combination of two or three dark roasted beans of
+                        organic coffees</span
+                      >
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="choose-type" id="quantity">
+                <div class="choose-type-content">
+                  <h2 class="choose-type__title">How much would you like?</h2>
+                  <img
+                    src="./img/top-arrow-icon.svg"
+                    alt="arrow"
+                    width="18"
+                    class="choose-type__img"
+                  />
+                </div>
+                <div class="type-cards">
+                  <div class="type-card">
+                    <input
+                      type="radio"
+                      name="quantity"
+                      class="visually-hidden type-card__input"
+                      id="250g"
+                    />
+                    <label for="250g" class="type-card__content">
+                      <span>250g</span>
+                      <span
+                        >Perfect for the solo drinker. Yields about 12 delicious
+                        cups.</span
+                      >
+                    </label>
+                  </div>
+                  <div class="type-card">
+                    <input
+                      type="radio"
+                      name="quantity"
+                      class="visually-hidden type-card__input"
+                      id="500g"
+                    />
+                    <label for="500g" class="type-card__content">
+                      <span>500g</span>
+                      <span
+                        >Perfect option for a couple. Yields about 40 delectable
+                        cups.</span
+                      >
+                    </label>
+                  </div>
+                  <div class="type-card">
+                    <input
+                      type="radio"
+                      name="quantity"
+                      class="visually-hidden type-card__input"
+                      id="1000g"
+                    />
+                    <label for="1000g" class="type-card__content">
+                      <span>1000g</span>
+                      <span
+                        >Perfect for offices and events. Yields about 90
+                        delightful cups.</span
+                      >
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="choose-type" id="grind-option">
+                <div class="choose-type-content">
+                  <h2 class="choose-type__title">Want us to grind them?</h2>
+                  <img
+                    src="./img/top-arrow-icon.svg"
+                    alt="arrow"
+                    width="18"
+                    class="choose-type__img"
+                  />
+                </div>
+                <div class="type-cards">
+                  <div class="type-card">
+                    <input
+                      type="radio"
+                      name="grind-option"
+                      class="visually-hidden type-card__input"
+                      id="wholebean"
+                    />
+                    <label for="wholebean" class="type-card__content">
+                      <span>Wholebean</span>
+                      <span
+                        >Best choice if you cherish the full sensory
+                        experience</span
+                      >
+                    </label>
+                  </div>
+                  <div class="type-card">
+                    <input
+                      type="radio"
+                      name="grind-option"
+                      class="visually-hidden type-card__input"
+                      id="filtery"
+                    />
+                    <label for="filtery" class="type-card__content">
+                      <span>Filter</span>
+                      <span
+                        >For drip or pour-over coffee methods such as V60 or
+                        Aeropress</span
+                      >
+                    </label>
+                  </div>
+                  <div class="type-card">
+                    <input
+                      type="radio"
+                      name="grind-option"
+                      class="visually-hidden type-card__input"
+                      id="cafetiere"
+                    />
+                    <label for="cafetiere" class="type-card__content">
+                      <span>Cafetiére</span>
+                      <span
+                        >Course ground beans specially suited for french press
+                        coffee</span
+                      >
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="choose-type" id="deliveries">
+                <div class="choose-type-content">
+                  <h2 class="choose-type__title">
+                    How often should we deliver?
+                  </h2>
+                  <img
+                    src="./img/top-arrow-icon.svg"
+                    alt="arrow"
+                    width="18"
+                    class="choose-type__img"
+                  />
+                </div>
+                <div class="type-cards">
+                  <div class="type-card">
+                    <input
+                      type="radio"
+                      name="deliveries"
+                      class="visually-hidden type-card__input"
+                      id="every-week"
+                    />
+                    <label for="every-week" class="type-card__content">
+                      <span>Every week</span>
+                      <span
+                        >$7.20 per shipment. Includes free first-class
+                        shipping.</span
+                      >
+                    </label>
+                  </div>
+                  <div class="type-card">
+                    <input
+                      type="radio"
+                      name="deliveries"
+                      class="visually-hidden type-card__input"
+                      id="every2-weeks"
+                    />
+                    <label for="every2-weeks" class="type-card__content">
+                      <span>Every 2 weeks</span>
+                      <span
+                        >$9.60 per shipment. Includes free priority
+                        shipping.</span
+                      >
+                    </label>
+                  </div>
+                  <div class="type-card">
+                    <input
+                      type="radio"
+                      name="deliveries"
+                      class="visually-hidden type-card__input"
+                      id="every-month"
+                    />
+                    <label for="every-month" class="type-card__content">
+                      <span>Every month</span>
+                      <span
+                        >$12.00 per shipment. Includes free priority shipping.</span
+                      >
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Choose section -->
     </main>
     <!-- /Main content of create plan section -->
   </body>
