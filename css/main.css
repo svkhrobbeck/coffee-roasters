@@ -528,6 +528,11 @@ body {
 .instructions {
   margin-top: 150px;
 }
+@media (max-width: 576px) {
+  .instructions {
+    margin-top: 10px;
+  }
+}
 .instructions__title {
   font: 24px "Fraunces";
   font-weight: 900;
@@ -1221,5 +1226,152 @@ body {
     font-size: 15px;
     line-height: 19px;
     margin-bottom: 32px;
+  }
+}
+
+.prepare {
+  margin-top: 168px;
+  width: 100%;
+  height: auto;
+  padding: 91px 85px 70px;
+  background-color: #333D4B;
+  border-radius: 10px;
+}
+@media (max-width: 992px) {
+  .prepare {
+    padding: 65px 35px 30px;
+    margin-top: 144px;
+  }
+}
+@media (max-width: 576px) {
+  .prepare {
+    margin-top: 144px;
+    padding: 25px 15px 20px;
+  }
+}
+.prepare .prepare-decorations {
+  display: flex;
+  gap: 349px;
+  position: relative;
+}
+@media (max-width: 992px) {
+  .prepare .prepare-decorations {
+    gap: 269px;
+  }
+}
+@media (max-width: 768px) {
+  .prepare .prepare-decorations {
+    gap: 189px;
+  }
+}
+@media (max-width: 576px) {
+  .prepare .prepare-decorations {
+    display: none;
+  }
+}
+.prepare .prepare-decorations .prepare__ring {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #0E8784;
+  align-items: center;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+}
+.prepare .prepare-decorations .prepare__line {
+  position: absolute;
+  z-index: 1;
+  width: 760px;
+  height: 2px;
+  background-color: #FDD6BA;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
+}
+@media (max-width: 992px) {
+  .prepare .prepare-decorations .prepare__line {
+    width: 600px;
+  }
+}
+@media (max-width: 768px) {
+  .prepare .prepare-decorations .prepare__line {
+    width: 440px;
+  }
+}
+.prepare-content {
+  display: flex;
+  width: 100%;
+  gap: 95px;
+  margin-top: 67px;
+}
+@media (max-width: 992px) {
+  .prepare-content {
+    gap: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .prepare-content {
+    gap: 10px;
+  }
+}
+@media (max-width: 576px) {
+  .prepare-content {
+    flex-direction: column;
+  }
+}
+.prepare__manual {
+  max-width: 285px;
+}
+@media (max-width: 992px) {
+  .prepare__manual {
+    max-width: 250px;
+  }
+}
+@media (max-width: 768px) {
+  .prepare__manual {
+    max-width: 223px;
+  }
+}
+@media (max-width: 576px) {
+  .prepare__manual {
+    max-width: none;
+    width: 100%;
+    text-align: center;
+  }
+}
+.prepare__number {
+  font: 72px "Fraunces";
+  font-weight: 900;
+  line-height: 72px;
+  color: #FDD6BA;
+}
+.prepare__title {
+  font: 32px "Fraunces";
+  font-weight: 900;
+  line-height: 36px;
+  color: #FEFCF7;
+  margin-top: 38px;
+}
+@media (max-width: 768px) {
+  .prepare__title {
+    font-size: 28px;
+  }
+}
+@media (max-width: 576px) {
+  .prepare__title br {
+    display: none;
+  }
+}
+.prepare__description {
+  font: 16px "Barlow";
+  font-weight: 400;
+  line-height: 26px;
+  color: #FEFCF7;
+  margin-top: 38px;
+}
+@media (max-width: 768px) {
+  .prepare__description {
+    font-size: 15px;
   }
 }/*# sourceMappingURL=main.css.map */

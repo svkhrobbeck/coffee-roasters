@@ -1,6 +1,10 @@
 .instructions {
   margin-top: 150px;
 
+  @media (max-width: $mobile) {
+    margin-top: 10px;
+  }
+
   &__title {
     font: 24px "Fraunces";
     font-weight: 900;
