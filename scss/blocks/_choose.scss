@@ -36,7 +36,7 @@
       line-height: 32px;
       color: $primary-grey;
       opacity: 0.5;
-      
+
       span {
         white-space: nowrap;
         opacity: 0.4;
@@ -74,10 +74,9 @@
       justify-content: space-between;
       padding: 88px 0 0;
 
-      
-    @media (max-width: $tablet) {
-      padding: 58px 0 0;
-    }
+      @media (max-width: $tablet) {
+        padding: 58px 0 0;
+      }
     }
 
     &__title {
@@ -89,29 +88,35 @@
 
     .type-cards {
       display: flex;
-      justify-content: center;
-      row-gap: 20px;
+      justify-content: space-between;
       gap: 20px;
-      flex-wrap: wrap;
       margin-top: 56px;
-
+      
+      @media (max-width: $tablet-l) {
+        justify-content: center;
+        row-gap: 20px;
+        flex-wrap: wrap;
+      }
+      
       @media (max-width: $tablet) {
-        flex-wrap: nowrap;
+        justify-content: space-between;
         row-gap: 0;
+        flex-wrap: nowrap;
       }
 
-      
-    @media (max-width: $mobile) {
-      flex-direction: column;
-      gap: 30px;
-    }
+      @media (max-width: $mobile) {
+        flex-direction: column;
+        row-gap: 0;
+        flex-wrap: nowrap;
+        gap: 30px;
+      }
     }
   }
 
   .type-card__input:checked + .type-card__content {
     background-color: $primary-green;
     transition: 0.3s ease;
-    
+
     span {
       transition: 0.3s ease;
       color: $white;
@@ -144,6 +149,51 @@
       font-weight: 400;
       line-height: 26px;
       color: $primary-grey;
+    }
+  }
+
+  .types-summary {
+    margin-top: 85px;
+    width: 100%;
+    height: auto;
+    padding: 27px 64px;
+    margin-bottom: 40px;
+    background-color: $primary-grey;
+    border-radius: 10px;
+
+    @media (max-width: $tablet) {
+      padding: 27px 44px;
+      margin-top: 45px;
+    }
+
+    &__heading {
+      font: 16px "Barlow";
+      font-weight: 400;
+      line-height: 26px;
+      text-transform: uppercase;
+      color: $white;
+      opacity: 0.5;
+    }
+
+    &__text {
+      font: 24px "Fraunces";
+      font-weight: 900;
+      line-height: 40px;
+      color: $white;
+
+      a {
+        text-decoration: none;
+        color: $primary-green;
+      }
+    }
+  }
+
+  .choose-types-link {
+    display: flex;
+    justify-content: flex-end;
+
+    @media (max-width: $tablet) {
+      justify-content: center;
     }
   }
 }
