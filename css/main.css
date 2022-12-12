@@ -129,7 +129,6 @@ body {
 }
 .main-header .header-block .logo__img {
   width: 100%;
-  max-width: 100%;
 }
 @media only screen and (max-width: 576px) {
   .main-header .header-block #hamburger:checked ~ .nav .nav__list {
