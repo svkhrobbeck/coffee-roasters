@@ -1565,6 +1565,7 @@ body {
   .choose .type-card__content {
     width: 100%;
     max-width: none;
+    padding: 32px 22px;
   }
 }
 .choose .type-card__content span:first-child {
