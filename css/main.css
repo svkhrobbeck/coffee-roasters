@@ -1445,11 +1445,16 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 88px 0 0;
+  cursor: pointer;
 }
 @media (max-width: 768px) {
   .choose-type-content {
     padding: 58px 0 0;
   }
+}
+.choose-type .rotate {
+  transition: 0.2s ease;
+  transform: rotate(180deg);
 }
 .choose-type__title {
   font: 40px "Fraunces";

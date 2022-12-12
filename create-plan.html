@@ -155,7 +155,7 @@
               </ul>
             </div>
             <div class="choose-types">
-              <div class="choose-type" id="preferences">
+              <div class="choose-type" id="preferences" data-preferences>
                 <div class="choose-type-content">
                   <h2 class="choose-type__title">
                     How do you drink your coffee?
@@ -164,10 +164,11 @@
                     src="./img/top-arrow-icon.svg"
                     alt="arrow"
                     width="18"
+                    data-preferences-arrow
                     class="choose-type__img"
                   />
                 </div>
-                <div class="type-cards">
+                <div class="type-cards" data-preferences-box>
                   <div class="type-card">
                     <input
                       type="radio"
@@ -215,17 +216,18 @@
                   </div>
                 </div>
               </div>
-              <div class="choose-type" id="bean-type">
+              <div class="choose-type" id="bean-type" data-bean-type>
                 <div class="choose-type-content">
                   <h2 class="choose-type__title">What type of coffee?</h2>
                   <img
                     src="./img/top-arrow-icon.svg"
                     alt="arrow"
                     width="18"
+                    data-bean-arrow
                     class="choose-type__img"
                   />
                 </div>
-                <div class="type-cards">
+                <div class="type-cards" data-bean-box>
                   <div class="type-card">
                     <input
                       type="radio"
@@ -273,17 +275,18 @@
                   </div>
                 </div>
               </div>
-              <div class="choose-type" id="quantity">
+              <div class="choose-type" id="quantity" data-quantity>
                 <div class="choose-type-content">
                   <h2 class="choose-type__title">How much would you like?</h2>
                   <img
                     src="./img/top-arrow-icon.svg"
                     alt="arrow"
                     width="18"
+                    data-quantity-arrow
                     class="choose-type__img"
                   />
                 </div>
-                <div class="type-cards">
+                <div class="type-cards" data-quantity-box>
                   <div class="type-card">
                     <input
                       type="radio"
@@ -331,17 +334,18 @@
                   </div>
                 </div>
               </div>
-              <div class="choose-type" id="grind-option">
+              <div class="choose-type" id="grind-option" data-grind>
                 <div class="choose-type-content">
                   <h2 class="choose-type__title">Want us to grind them?</h2>
                   <img
                     src="./img/top-arrow-icon.svg"
                     alt="arrow"
                     width="18"
+                    data-grind-arrow
                     class="choose-type__img"
                   />
                 </div>
-                <div class="type-cards">
+                <div class="type-cards" data-grind-box>
                   <div class="type-card">
                     <input
                       type="radio"
@@ -389,7 +393,7 @@
                   </div>
                 </div>
               </div>
-              <div class="choose-type" id="deliveries">
+              <div class="choose-type" id="deliveries" data-deliveries>
                 <div class="choose-type-content">
                   <h2 class="choose-type__title">
                     How often should we deliver?
@@ -398,10 +402,11 @@
                     src="./img/top-arrow-icon.svg"
                     alt="arrow"
                     width="18"
+                    data-deliveries-arrow
                     class="choose-type__img"
                   />
                 </div>
-                <div class="type-cards">
+                <div class="type-cards" data-deliveries-box>
                   <div class="type-card">
                     <input
                       type="radio"
@@ -549,5 +554,7 @@
       </div>
     </footer>
     <!-- /Footer -->
+
+    <script src="./js/main.js"></script>
   </body>
 </html>

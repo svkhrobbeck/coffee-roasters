@@ -73,10 +73,15 @@
       display: flex;
       justify-content: space-between;
       padding: 88px 0 0;
+      cursor: pointer;
 
       @media (max-width: $tablet) {
         padding: 58px 0 0;
       }
+    }
+    .rotate {
+      transition: 0.2s ease;
+      transform: rotate(180deg);
     }
 
     &__title {
@@ -91,13 +96,13 @@
       justify-content: space-between;
       gap: 20px;
       margin-top: 56px;
-      
+
       @media (max-width: $tablet-l) {
         justify-content: center;
         row-gap: 20px;
         flex-wrap: wrap;
       }
-      
+
       @media (max-width: $tablet) {
         justify-content: space-between;
         row-gap: 0;
