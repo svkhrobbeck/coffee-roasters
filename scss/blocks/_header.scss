@@ -7,6 +7,7 @@
 
   @media only screen and (max-width: $tablet) {
     position: static;
+    z-index: 1;
   }
 
   .header-block {
@@ -71,13 +72,15 @@
         position: fixed;
         top: 0;
         left: 0;
-        transform: translate(-100%);
+        transform: translate(-140%);
         z-index: 100;
         background-color: $white;
         height: 100vh;
-        width: 40%;
-        padding: 55px 0 0 20px;
-        transition: 0.3s ease;
+        width: 55%;
+        padding: 75px 0 0 20px;
+        transition: 1s ease;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+          rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
       }
     }
 
@@ -98,6 +101,10 @@
       &:hover,
       :focus {
         color: $black;
+      }
+
+      @media only screen and (max-width: $mobile) {
+        font-size: 16px;
       }
     }
   }
