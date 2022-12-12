@@ -45,7 +45,7 @@ body {
   max-width: $desktop;
   margin: 0 auto;
 
-  @media (max-width: $tablet-l) {
+  @media only screen and (max-width: $tablet-l) {
     max-width: $tablet-l;
     padding: 0 20px;
   }
@@ -77,15 +77,15 @@ body {
     background-color: #66d2cf;
   }
 
-  @media (max-width: $tablet-l) {
+  @media only screen and (max-width: $tablet-l) {
     padding: 14px 26px;
   }
 
-  @media (max-width: $tablet) {
+  @media only screen and (max-width: $tablet) {
     padding: 13px 24px;
   }
 
-  @media (max-width: $mobile) {
+  @media only screen and (max-width: $mobile) {
     padding: 12px 22px;
     font-size: 14px;
   }

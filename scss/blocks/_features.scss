@@ -8,11 +8,11 @@
     border-radius: 10px;
     position: relative;
 
-    @media (max-width: $tablet) {
+    @media only screen and (max-width: $tablet) {
       height: 640px;
     }
 
-    @media (max-width: $mobile) {
+    @media only screen and (max-width: $mobile) {
       height: 900px;
       padding-bottom: 20px;
     }
@@ -22,8 +22,8 @@
       margin: 0 auto;
       text-align: center;
       padding: 100px 0 0;
-      
-      @media (max-width: $mobile) {
+
+      @media only screen and (max-width: $mobile) {
         padding: 100px 10px 40px;
       }
     }
@@ -42,101 +42,99 @@
       line-height: 26px;
       color: $light;
     }
+  }
 
-    
+  .features-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 0 45px 0;
+    transform: translateY(-200px);
+
+    @media only screen and (max-width: $tablet) {
+      transform: translateY(-250px);
+      width: 80%;
+      margin: 0 10%;
     }
 
-    .features-cards {
+    @media only screen and (max-width: $mobile) {
+      transform: translateY(-450px);
+      width: 80%;
+      margin: 0 10%;
+    }
+  }
+
+  .features-card {
+    max-width: 350px;
+    background-color: $primary-green;
+    border-radius: 8px;
+    padding: 72px 48px 48px;
+
+    @media only screen and (max-width: $tablet) {
+      display: flex;
+      align-items: center;
+      gap: 55px;
+      width: 100%;
+      max-width: none;
+      padding: 20px 38px 30px;
+    }
+
+    @media only screen and (max-width: $mobile) {
+      display: block;
+      padding: 72px 38px 50px;
+    }
+
+    &-image {
       display: flex;
       justify-content: center;
-      flex-wrap: wrap;
-      gap: 30px;
-      margin: 0 45px 0;
-      transform: translateY(-200px);
-      
-      @media (max-width: $tablet) {
-        transform: translateY(-250px);
-        width: 80%;
-        margin: 0 10%;
-      }
-      
-      @media (max-width: $mobile) {
-        transform: translateY(-450px);
-        width: 80%;
-        margin: 0 10%;
+
+      .truck-mg {
+        margin: 10px 0;
       }
     }
 
-    .features-card {
-      max-width: 350px;
-      background-color: $primary-green;
-      border-radius: 8px;
-      padding: 72px 48px 48px;
+    &-content {
+      width: 254px;
+      text-align: center;
 
-      @media (max-width: $tablet) {
-        display: flex;
-        align-items: center;
-        gap: 55px;
-        width: 100%;
-        max-width: none;
-        padding: 20px 38px 30px;
-      }
-      
-      @media (max-width: $mobile) {
-        display: block;
-        padding: 72px 38px 50px;
+      @media only screen and (max-width: $tablet) {
+        margin: 0;
+        text-align: left;
+        width: auto;
       }
 
-      &-image {
-        display: flex;
-        justify-content: center;
-
-        .truck-mg {
-          margin: 10px 0;
-        }
-      }
-
-      &-content {
-        width: 254px;
+      @media only screen and (max-width: $mobile) {
         text-align: center;
+      }
+    }
 
-        @media (max-width: $tablet) {
-          margin: 0;
-          text-align: left;
-          width: auto;
-        }
+    &__heading {
+      font: 24px "Fraunces";
+      font-weight: 900;
+      line-height: 32px;
+      color: $light;
+      margin-top: 55px;
 
-        @media (max-width: $mobile) {
-          text-align: center;
-        }
+      @media only screen and (max-width: $tablet) {
+        margin: 0;
       }
 
-      &__heading {
-        font: 24px "Fraunces";
-        font-weight: 900;
-        line-height: 32px;
-        color: $light;
-        margin-top: 55px;
-
-        @media (max-width: $tablet) {
-          margin: 0;
-        }
-
-        @media (max-width: $mobile) {
-          margin-top: 56px;
-        }
+      @media only screen and (max-width: $mobile) {
+        margin-top: 56px;
       }
+    }
 
-      &__text {
-        font: 16px "Barlow";
-        font-weight: 400;
-        line-height: 26px;
-        color: $light;
-        margin-top: 24px;
+    &__text {
+      font: 16px "Barlow";
+      font-weight: 400;
+      line-height: 26px;
+      color: $light;
+      margin-top: 24px;
 
-        @media (max-width: $tablet) {
-          font-size: 15px;
-        }
+      @media only screen and (max-width: $tablet) {
+        font-size: 15px;
       }
+    }
   }
 }

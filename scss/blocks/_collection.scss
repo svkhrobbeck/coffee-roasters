@@ -13,15 +13,15 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
-    @media (max-width: $tablet-l) {
+    @media only screen and (max-width: $tablet-l) {
       font-size: 105px;
     }
 
-    @media (max-width: $tablet) {
+    @media only screen and (max-width: $tablet) {
       font-size: 75px;
     }
 
-    @media (max-width: $mobile) {
+    @media only screen and (max-width: $mobile) {
       font-size: 45px;
     }
   }
@@ -33,13 +33,13 @@
     flex-wrap: wrap;
     gap: 30px;
     transform: translateY(-55px);
-    
-    @media (max-width: $tablet) {
+
+    @media only screen and (max-width: $tablet) {
       justify-content: center;
       transform: translateY(-35px);
     }
-    
-    @media (max-width: $mobile) {
+
+    @media only screen and (max-width: $mobile) {
       transform: translateY(0);
     }
 
@@ -50,14 +50,14 @@
       justify-content: center;
       flex-direction: column;
 
-      @media (max-width: $tablet) {
+      @media only screen and (max-width: $tablet) {
         width: 100%;
         padding: 0 85px;
         flex-direction: row;
         justify-content: space-between;
       }
 
-      @media (max-width: $mobile) {
+      @media only screen and (max-width: $mobile) {
         width: auto;
         max-width: 255px;
         padding: 0;
@@ -67,11 +67,11 @@
       .collection-pocket-image {
         width: 100%;
 
-        @media (max-width: $tablet) {
+        @media only screen and (max-width: $tablet) {
           width: 50%;
         }
 
-        @media (max-width: $mobile) {
+        @media only screen and (max-width: $mobile) {
           width: 100%;
         }
 
@@ -84,12 +84,12 @@
         width: 100%;
         text-align: center;
 
-        @media (max-width: $tablet) {
+        @media only screen and (max-width: $tablet) {
           text-align: left;
           width: 50%;
         }
 
-        @media (max-width: $mobile) {
+        @media only screen and (max-width: $mobile) {
           text-align: center;
           width: 100%;
         }

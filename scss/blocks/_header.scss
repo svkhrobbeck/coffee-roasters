@@ -5,17 +5,16 @@
   background-color: $white;
   padding: 20px 0;
 
-  
-  @media (max-width: $tablet) {
+  @media only screen and (max-width: $tablet) {
     position: static;
   }
-  
+
   .header-block {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    @media (max-width: $mobile) {
+    @media only screen and (max-width: $mobile) {
       justify-content: center;
     }
 
@@ -25,7 +24,7 @@
     }
 
     #hamburger {
-      @media (max-width: $mobile) {
+      @media only screen and (max-width: $mobile) {
         &:checked ~ .nav .nav__list {
           transform: translate(0);
         }
@@ -54,7 +53,7 @@
     }
 
     #menu {
-      @media (max-width: $mobile) {
+      @media only screen and (max-width: $mobile) {
         display: block;
       }
     }
@@ -65,7 +64,7 @@
       gap: 33px;
       list-style-type: none;
 
-      @media (max-width: $mobile) {
+      @media only screen and (max-width: $mobile) {
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
@@ -90,13 +89,14 @@
       letter-spacing: 0.9px;
       text-transform: uppercase;
       color: $lighter-grey;
-      transition: .3s ease;
+      transition: 0.3s ease;
 
       &--checked {
         color: $black;
       }
 
-      &:hover, :focus {
+      &:hover,
+      :focus {
         color: $black;
       }
     }

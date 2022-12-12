@@ -6,12 +6,12 @@
   background-color: $primary-grey;
   border-radius: 10px;
 
-  @media (max-width: $tablet-l) {
+  @media only screen and (max-width: $tablet-l) {
     padding: 65px 35px 30px;
     margin-top: 144px;
   }
 
-  @media (max-width: $mobile) {
+  @media only screen and (max-width: $mobile) {
     margin-top: 144px;
     padding: 25px 15px 20px;
   }
@@ -21,15 +21,15 @@
     gap: 349px;
     position: relative;
 
-    @media (max-width: $tablet-l) {
+    @media only screen and (max-width: $tablet-l) {
       gap: 269px;
     }
 
-    @media (max-width: $tablet) {
+    @media only screen and (max-width: $tablet) {
       gap: 189px;
     }
 
-    @media (max-width: $mobile) {
+    @media only screen and (max-width: $mobile) {
       display: none;
     }
 
@@ -54,11 +54,11 @@
       transform: translateY(-50%);
       left: 15px;
 
-      @media (max-width: $tablet-l) {
+      @media only screen and (max-width: $tablet-l) {
         width: 600px;
       }
 
-      @media (max-width: $tablet) {
+      @media only screen and (max-width: $tablet) {
         width: 440px;
       }
     }
@@ -69,15 +69,15 @@
     width: 100%;
     gap: 95px;
     margin-top: 67px;
-    
+
     @media (max-width: $tablet-l) {
       gap: 30px;
     }
-    
+
     @media (max-width: $tablet) {
       gap: 10px;
     }
-    
+
     @media (max-width: $mobile) {
       flex-direction: column;
     }
@@ -85,15 +85,15 @@
 
   &__manual {
     max-width: 285px;
-    
+
     @media (max-width: $tablet-l) {
       max-width: 250px;
     }
-    
+
     @media (max-width: $tablet) {
       max-width: 223px;
     }
-    
+
     @media (max-width: $mobile) {
       max-width: none;
       width: 100%;
@@ -115,11 +115,10 @@
     color: $light;
     margin-top: 38px;
 
-        
     @media (max-width: $tablet) {
       font-size: 28px;
     }
-        
+
     @media (max-width: $mobile) {
       br {
         display: none;
@@ -134,7 +133,6 @@
     color: $light;
     margin-top: 38px;
 
-            
     @media (max-width: $tablet) {
       font-size: 15px;
     }

@@ -1,7 +1,7 @@
 .address {
   margin-top: 168px;
 
-  @media (max-width: $tablet) {
+  @media only screen and (max-width: $tablet) {
     margin-top: 144px;
   }
 
@@ -11,7 +11,7 @@
     line-height: 32px;
     color: $lighter-grey;
 
-    @media (max-width: $mobile) {
+    @media only screen and (max-width: $mobile) {
       text-align: center;
     }
   }
@@ -22,11 +22,11 @@
     gap: 70px;
     flex-wrap: wrap;
 
-    @media (max-width: $tablet) {
+    @media only screen and (max-width: $tablet) {
       justify-content: center;
     }
 
-    @media (max-width: $mobile) {
+    @media only screen and (max-width: $mobile) {
       flex-direction: column;
       align-items: center;
       text-align: center;

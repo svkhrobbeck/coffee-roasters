@@ -7,7 +7,7 @@
   justify-content: space-between;
   margin-top: 256px;
 
-  @media (max-width: $tablet-l) {
+  @media only screen and (max-width: $tablet-l) {
     flex-direction: column-reverse;
     height: auto;
     padding: 0 0 20px;
@@ -17,13 +17,13 @@
     width: 40%;
     padding: 88px 0 0 5%;
 
-    @media (max-width: $tablet-l) {
+    @media only screen and (max-width: $tablet-l) {
       padding: 0 20px;
       width: 100%;
       text-align: center;
     }
 
-    @media (max-width: $mobile) {
+    @media only screen and (max-width: $mobile) {
       width: 96%;
       padding: 0 5px;
     }
@@ -35,17 +35,17 @@
     line-height: 48px;
     color: $light;
 
-    @media (max-width: $tablet-l) {
+    @media only screen and (max-width: $tablet-l) {
       font-size: 34px;
       line-height: 42px;
     }
 
-    @media (max-width: $tablet) {
+    @media only screen and (max-width: $tablet) {
       font-size: 28px;
       line-height: 34px;
     }
 
-    @media (max-width: $mobile) {
+    @media only screen and (max-width: $mobile) {
       font-size: 24px;
       line-height: 30px;
     }
@@ -59,19 +59,19 @@
     opacity: 0.8;
     margin-top: 32px;
 
-    @media (max-width: $tablet-l) {
+    @media only screen and (max-width: $tablet-l) {
       font-size: 15px;
       line-height: 23px;
     }
 
-    @media (max-width: $tablet) {
+    @media only screen and (max-width: $tablet) {
       font-size: 14px;
       line-height: 19px;
     }
   }
 
   &-image {
-    @media (max-width: $tablet-l) {
+    @media only screen and (max-width: $tablet-l) {
       transform: translateY(-160px);
     }
 
@@ -79,7 +79,7 @@
       max-width: 445px;
       transform: translateX(-85px) translateY(-88px);
 
-      @media (max-width: $tablet-l) {
+      @media only screen and (max-width: $tablet-l) {
         position: relative;
         max-width: none;
         width: 90%;

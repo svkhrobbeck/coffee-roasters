@@ -1,7 +1,7 @@
-.instructions {
+only screen and .instructions {
   margin-top: 150px;
 
-  @media (max-width: $mobile) {
+  @media only screen and (max-width: $mobile) {
     margin-top: 10px;
   }
 
@@ -11,7 +11,7 @@
     line-height: 32px;
     color: $lighter-grey;
 
-    @media (max-width: $mobile) {
+    @media only screen and (max-width: $mobile) {
       text-align: center;
     }
   }
@@ -21,7 +21,7 @@
     align-items: center;
     margin-top: 80px;
 
-    @media (max-width: $mobile) {
+    @media only screen and (max-width: $mobile) {
       display: none;
     }
 
@@ -39,11 +39,11 @@
       height: 2px;
       background-color: $primary-orange;
 
-      @media (max-width: $tablet-l) {
+      @media only screen and (max-width: $tablet-l) {
         width: 300px;
       }
 
-      @media (max-width: $tablet) {
+      @media only screen and (max-width: $tablet) {
         width: 210px;
       }
     }
@@ -55,17 +55,17 @@
     gap: 85px;
     margin-top: 48px;
 
-    @media (max-width: $tablet-l) {
+    @media only screen and (max-width: $tablet-l) {
       gap: 40px;
     }
 
-    @media (max-width: $tablet) {
+    @media only screen and (max-width: $tablet) {
       gap: 20px;
       flex-wrap: wrap;
       justify-content: center;
     }
 
-    @media (max-width: $mobile) {
+    @media only screen and (max-width: $mobile) {
       flex-direction: column;
       text-align: center;
     }
@@ -74,29 +74,29 @@
   .info-prepare {
     width: 300px;
 
-    @media (max-width: $tablet-l) {
+    @media only screen and (max-width: $tablet-l) {
       width: 240px;
     }
 
-    @media (max-width: $tablet) {
+    @media only screen and (max-width: $tablet) {
       width: 224px;
     }
 
-    @media (max-width: $tablet) {
+    @media only screen and (max-width: $tablet) {
       width: 100%;
     }
 
     &:first-child {
       margin-bottom: 64px;
 
-      @media (max-width: $tablet) {
+      @media only screen and (max-width: $tablet) {
         margin: 0;
       }
     }
     &:last-child {
       margin-bottom: 64px;
 
-      @media (max-width: $tablet) {
+      @media only screen and (max-width: $tablet) {
         margin-bottom: 64px;
       }
     }
@@ -116,7 +116,7 @@
     color: $primary-grey;
     margin-top: 42px;
 
-    @media (max-width: $mobile) {
+    @media only screen and (max-width: $mobile) {
       br {
         display: none;
       }
@@ -132,7 +132,7 @@
   }
 
   .instructions-link {
-    @media (max-width: $mobile) {
+    @media only screen and (max-width: $mobile) {
       display: flex;
       justify-content: center;
     }
