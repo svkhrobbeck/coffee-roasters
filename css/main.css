@@ -1491,6 +1491,11 @@ body {
     padding: 58px 0 0;
   }
 }
+@media (max-width: 576px) {
+  .choose-type__img {
+    max-width: 18px;
+  }
+}
 .choose-type .rotate {
   transition: 0.2s ease;
   transform: rotate(180deg);
