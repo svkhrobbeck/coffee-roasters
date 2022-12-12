@@ -13,7 +13,6 @@
     }
 
     @media only screen and (max-width: $mobile) {
-      height: 900px;
       padding-bottom: 20px;
     }
 
@@ -59,7 +58,6 @@
     }
 
     @media only screen and (max-width: $mobile) {
-      transform: translateY(-450px);
       width: 80%;
       margin: 0 10%;
     }

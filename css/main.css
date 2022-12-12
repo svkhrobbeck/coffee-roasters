@@ -405,7 +405,6 @@ body {
 }
 @media only screen and (max-width: 576px) {
   .features-container {
-    height: 900px;
     padding-bottom: 20px;
   }
 }
@@ -450,7 +449,6 @@ body {
 }
 @media only screen and (max-width: 576px) {
   .features .features-cards {
-    transform: translateY(-450px);
     width: 80%;
     margin: 0 10%;
   }
@@ -530,123 +528,123 @@ body {
   }
 }
 
-only screen and .instructions {
+.instructions {
   margin-top: 150px;
 }
 @media only screen and (max-width: 576px) {
-  only screen and .instructions {
+  .instructions {
     margin-top: 10px;
   }
 }
-only screen and .instructions__title {
+.instructions__title {
   font: 24px "Fraunces";
   font-weight: 900;
   line-height: 32px;
   color: #83888F;
 }
 @media only screen and (max-width: 576px) {
-  only screen and .instructions__title {
+  .instructions__title {
     text-align: center;
   }
 }
-only screen and .instructions-decoration {
+.instructions-decoration {
   display: flex;
   align-items: center;
   margin-top: 80px;
 }
 @media only screen and (max-width: 576px) {
-  only screen and .instructions-decoration {
+  .instructions-decoration {
     display: none;
   }
 }
-only screen and .instructions-decoration .deco-ring {
+.instructions-decoration .deco-ring {
   display: inline-block;
   border: 2px solid #0E8784;
   border-radius: 50%;
   width: 30px;
   height: 30px;
 }
-only screen and .instructions-decoration .deco-line {
+.instructions-decoration .deco-line {
   display: inline-block;
   width: 350px;
   height: 2px;
   background-color: #FDD6BA;
 }
 @media only screen and (max-width: 992px) {
-  only screen and .instructions-decoration .deco-line {
+  .instructions-decoration .deco-line {
     width: 300px;
   }
 }
 @media only screen and (max-width: 768px) {
-  only screen and .instructions-decoration .deco-line {
+  .instructions-decoration .deco-line {
     width: 210px;
   }
 }
-only screen and .instructions .instructions-info {
+.instructions .instructions-info {
   display: flex;
   justify-content: space-between;
   gap: 85px;
   margin-top: 48px;
 }
 @media only screen and (max-width: 992px) {
-  only screen and .instructions .instructions-info {
+  .instructions .instructions-info {
     gap: 40px;
   }
 }
 @media only screen and (max-width: 768px) {
-  only screen and .instructions .instructions-info {
+  .instructions .instructions-info {
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
   }
 }
 @media only screen and (max-width: 576px) {
-  only screen and .instructions .instructions-info {
+  .instructions .instructions-info {
     flex-direction: column;
     text-align: center;
   }
 }
-only screen and .instructions .info-prepare {
+.instructions .info-prepare {
   width: 300px;
 }
 @media only screen and (max-width: 992px) {
-  only screen and .instructions .info-prepare {
+  .instructions .info-prepare {
     width: 240px;
   }
 }
 @media only screen and (max-width: 768px) {
-  only screen and .instructions .info-prepare {
+  .instructions .info-prepare {
     width: 224px;
   }
 }
 @media only screen and (max-width: 768px) {
-  only screen and .instructions .info-prepare {
+  .instructions .info-prepare {
     width: 100%;
   }
 }
-only screen and .instructions .info-prepare:first-child {
+.instructions .info-prepare:first-child {
   margin-bottom: 64px;
 }
 @media only screen and (max-width: 768px) {
-  only screen and .instructions .info-prepare:first-child {
+  .instructions .info-prepare:first-child {
     margin: 0;
   }
 }
-only screen and .instructions .info-prepare:last-child {
+.instructions .info-prepare:last-child {
   margin-bottom: 64px;
 }
 @media only screen and (max-width: 768px) {
-  only screen and .instructions .info-prepare:last-child {
+  .instructions .info-prepare:last-child {
     margin-bottom: 64px;
   }
 }
-only screen and .instructions .instructions-info__number {
+.instructions .instructions-info__number {
   font: 72px "Fraunces";
   font-weight: 900;
   line-height: 72px;
   color: #FDD6BA;
 }
-only screen and .instructions .instructions-info__heading {
+.instructions .instructions-info__heading {
   font: 26px "Fraunces";
   font-weight: 900;
   line-height: 32px;
@@ -654,11 +652,11 @@ only screen and .instructions .instructions-info__heading {
   margin-top: 42px;
 }
 @media only screen and (max-width: 576px) {
-  only screen and .instructions .instructions-info__heading br {
+  .instructions .instructions-info__heading br {
     display: none;
   }
 }
-only screen and .instructions .instructions-info__text {
+.instructions .instructions-info__text {
   font: 15px "Barlow";
   font-weight: 400;
   line-height: 25px;
@@ -666,7 +664,7 @@ only screen and .instructions .instructions-info__text {
   color: #333D4B;
 }
 @media only screen and (max-width: 576px) {
-  only screen and .instructions .instructions-link {
+  .instructions .instructions-link {
     display: flex;
     justify-content: center;
   }
@@ -732,7 +730,7 @@ only screen and .instructions .instructions-info__text {
   color: #FDD6BA;
 }
 
-only screen and .about-us {
+.about-us {
   background: url(../../img/about-us.png) no-repeat center;
   width: 100%;
   background-size: contain;
@@ -740,7 +738,7 @@ only screen and .about-us {
   padding: 100px 0 0 85px;
 }
 @media only screen and (max-width: 992px) {
-  only screen and .about-us {
+  .about-us {
     height: 420px;
     background-size: cover;
     border-radius: 10px;
@@ -748,7 +746,7 @@ only screen and .about-us {
   }
 }
 @media only screen and (max-width: 768px) {
-  only screen and .about-us {
+  .about-us {
     height: 370px;
     background-size: cover;
     border-radius: 10px;
@@ -756,54 +754,54 @@ only screen and .about-us {
   }
 }
 @media only screen and (max-width: 576px) {
-  only screen and .about-us {
+  .about-us {
     padding: 30px 10px 0;
   }
 }
-only screen and .about-us .about-us-content {
+.about-us .about-us-content {
   width: 50%;
 }
 @media only screen and (max-width: 992px) {
-  only screen and .about-us .about-us-content {
+  .about-us .about-us-content {
     width: 55%;
   }
 }
 @media only screen and (max-width: 768px) {
-  only screen and .about-us .about-us-content {
+  .about-us .about-us-content {
     width: 65%;
   }
 }
 @media only screen and (max-width: 576px) {
-  only screen and .about-us .about-us-content {
+  .about-us .about-us-content {
     width: 100%;
     text-align: center;
   }
 }
-only screen and .about-us .about-us__title {
+.about-us .about-us__title {
   font: 64px "Fraunces";
   font-weight: 900;
   line-height: 64px;
   color: #FEFCF7;
 }
 @media only screen and (max-width: 992px) {
-  only screen and .about-us .about-us__title {
+  .about-us .about-us__title {
     font-size: 54px;
     line-height: 54px;
   }
 }
 @media only screen and (max-width: 768px) {
-  only screen and .about-us .about-us__title {
+  .about-us .about-us__title {
     font-size: 48px;
     line-height: 48px;
   }
 }
 @media only screen and (max-width: 576px) {
-  only screen and .about-us .about-us__title {
+  .about-us .about-us__title {
     font-size: 44px;
     line-height: 44px;
   }
 }
-only screen and .about-us .about-us__description {
+.about-us .about-us__description {
   font: 16px "Barlow";
   font-weight: 400;
   margin-top: 32px;
@@ -813,14 +811,14 @@ only screen and .about-us .about-us__description {
   margin-bottom: 56px;
 }
 @media only screen and (max-width: 992px) {
-  only screen and .about-us .about-us__description {
+  .about-us .about-us__description {
     font-size: 15px;
     line-height: 22px;
     margin-bottom: 40px;
   }
 }
 @media only screen and (max-width: 768px) {
-  only screen and .about-us .about-us__description {
+  .about-us .about-us__description {
     font-size: 15px;
     line-height: 19px;
     margin-bottom: 32px;
@@ -1477,12 +1475,12 @@ only screen and .about-us .about-us__description {
 }
 @media only screen and (max-width: 768px) {
   .choose-type__title {
-    font-size: 30px;
+    font-size: 32px;
   }
 }
 @media only screen and (max-width: 576px) {
   .choose-type__title {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .choose-type .type-cards {
@@ -1498,14 +1496,14 @@ only screen and .about-us .about-us__description {
     flex-wrap: wrap;
   }
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .choose-type .type-cards {
     justify-content: space-between;
     row-gap: 0;
     flex-wrap: nowrap;
   }
 }
-@media (max-width: 576px) {
+@media only screen and (max-width: 576px) {
   .choose-type .type-cards {
     flex-direction: column;
     row-gap: 0;
@@ -1530,7 +1528,7 @@ only screen and .about-us .about-us__description {
   display: inline-flex;
   flex-direction: column;
 }
-@media (max-width: 576px) {
+@media only screen and (max-width: 576px) {
   .choose .type-card__content {
     width: 100%;
     max-width: none;
@@ -1557,10 +1555,16 @@ only screen and .about-us .about-us__description {
   background-color: #333D4B;
   border-radius: 10px;
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .choose .types-summary {
     padding: 27px 44px;
-    margin-top: 45px;
+    margin-top: 65px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .choose .types-summary {
+    padding: 22px 33px;
+    margin-top: 55px;
   }
 }
 .choose .types-summary__heading {
@@ -1574,8 +1578,13 @@ only screen and .about-us .about-us__description {
 .choose .types-summary__text {
   font: 24px "Fraunces";
   font-weight: 900;
-  line-height: 40px;
+  line-height: 2;
   color: #FFFFFF;
+}
+@media only screen and (max-width: 576px) {
+  .choose .types-summary__text {
+    font-size: 19px;
+  }
 }
 .choose .types-summary__text a {
   text-decoration: none;

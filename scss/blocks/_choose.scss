@@ -91,11 +91,11 @@
       color: $lighter-grey;
 
       @media only screen and (max-width: $tablet) {
-        font-size: 30px;
+        font-size: 32px;
       }
 
       @media only screen and (max-width: $mobile) {
-        font-size: 20px;
+        font-size: 24px;
       }
     }
 
@@ -111,13 +111,13 @@
         flex-wrap: wrap;
       }
 
-      @media (max-width: $tablet) {
+      @media only screen and (max-width: $tablet) {
         justify-content: space-between;
         row-gap: 0;
         flex-wrap: nowrap;
       }
 
-      @media (max-width: $mobile) {
+      @media only screen and (max-width: $mobile) {
         flex-direction: column;
         row-gap: 0;
         flex-wrap: nowrap;
@@ -145,7 +145,7 @@
     display: inline-flex;
     flex-direction: column;
 
-    @media (max-width: $mobile) {
+    @media only screen and (max-width: $mobile) {
       width: 100%;
       max-width: none;
     }
@@ -174,9 +174,14 @@
     background-color: $primary-grey;
     border-radius: 10px;
 
-    @media (max-width: $tablet) {
+    @media only screen and (max-width: $tablet) {
       padding: 27px 44px;
-      margin-top: 45px;
+      margin-top: 65px;
+    }
+
+    @media only screen and (max-width: $mobile) {
+      padding: 22px 33px;
+      margin-top: 55px;
     }
 
     &__heading {
@@ -191,8 +196,12 @@
     &__text {
       font: 24px "Fraunces";
       font-weight: 900;
-      line-height: 40px;
+      line-height: 2;
       color: $white;
+
+      @media only screen and (max-width: $mobile) {
+        font-size: 19px;
+      }
 
       a {
         text-decoration: none;
