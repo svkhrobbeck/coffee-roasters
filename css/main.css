@@ -183,6 +183,11 @@ body {
 .main-header .header-block .nav__link :focus {
   color: #000000;
 }
+@media only screen and (max-width: 768px) {
+  .main-header .header-block .nav__link {
+    font-size: 13px;
+  }
+}
 @media only screen and (max-width: 576px) {
   .main-header .header-block .nav__link {
     font-size: 16px;
