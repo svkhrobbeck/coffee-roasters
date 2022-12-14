@@ -33,6 +33,11 @@
   padding: 0;
 }
 
+*:focus {
+  outline-offset: 3px;
+  outline: 2px dotted $black;
+}
+
 html {
   scroll-behavior: smooth;
 }
