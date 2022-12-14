@@ -63,7 +63,6 @@ body {
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -76,7 +75,7 @@ body {
   padding: 15px 30px;
   text-decoration: none;
   color: $light;
-  transition: 0.3s ease;
+  transition: background-color 0.3s ease;
 
   &:hover {
     background-color: #66d2cf;

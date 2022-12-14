@@ -25,6 +25,11 @@
   padding: 0;
 }
 
+*:focus {
+  outline-offset: 3px;
+  outline: 2px dotted #000000;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -64,7 +69,7 @@ body {
   padding: 15px 30px;
   text-decoration: none;
   color: #FEFCF7;
-  transition: 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 #primary-btn:hover {
   background-color: #66d2cf;
@@ -178,7 +183,7 @@ body {
     height: 100vh;
     width: 65%;
     padding: 90px 0 0 20px;
-    transition: 1s ease;
+    transition: transform 1s ease;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   }
 }
@@ -190,13 +195,12 @@ body {
   letter-spacing: 0.9px;
   text-transform: uppercase;
   color: #83888F;
-  transition: 0.3s ease;
+  transition: color 0.3s ease;
 }
 .main-header .header-block .nav__link--checked {
   color: #000000;
 }
-.main-header .header-block .nav__link:hover,
-.main-header .header-block .nav__link :focus {
+.main-header .header-block .nav__link:hover, .main-header .header-block .nav__link:focus {
   color: #000000;
 }
 @media only screen and (max-width: 768px) {
@@ -741,7 +745,7 @@ body {
   line-height: 15px;
   letter-spacing: 0.9px;
   text-transform: uppercase;
-  transition: 0.3s ease;
+  transition: color 0.3s ease;
 }
 .main-footer .footer-block .footer-nav__link:hover {
   color: #FEFCF7;
@@ -753,6 +757,7 @@ body {
 }
 .main-footer .footer-block .footer-icons svg {
   color: #FEFCF7;
+  transition: color 0.4s ease;
 }
 .main-footer .footer-block .footer-icons svg:hover {
   color: #FDD6BA;
@@ -1160,7 +1165,7 @@ body {
   line-height: 15px;
   letter-spacing: 0.9px;
   text-transform: uppercase;
-  transition: 0.3s ease;
+  transition: color 0.3s ease;
 }
 .main-footer .footer-block .footer-nav__link:hover {
   color: #FEFCF7;
@@ -1172,6 +1177,7 @@ body {
 }
 .main-footer .footer-block .footer-icons svg {
   color: #FEFCF7;
+  transition: color 0.4s ease;
 }
 .main-footer .footer-block .footer-icons svg:hover {
   color: #FDD6BA;
@@ -1455,6 +1461,7 @@ body {
   line-height: 32px;
   color: #333D4B;
   opacity: 0.5;
+  transition: opacity 0.4s ease;
 }
 .choose-menu__link span {
   white-space: nowrap;
@@ -1546,20 +1553,23 @@ body {
 }
 .choose .type-card__input:checked + .type-card__content {
   background-color: #0E8784;
-  transition: 0.3s ease;
 }
 .choose .type-card__input:checked + .type-card__content span {
-  transition: 0.3s ease;
+  transition: color 0.3s ease;
   color: #FFFFFF;
 }
 .choose .type-card__content {
   max-width: 228px;
+  transition: color 0.3s ease, background-color 0.3s ease;
   height: auto;
   padding: 32px 25px 84px;
   border-radius: 8px;
   background-color: #F4F1EB;
   display: inline-flex;
   flex-direction: column;
+}
+.choose .type-card__content:hover {
+  background-color: #FDD6BA;
 }
 @media only screen and (max-width: 576px) {
   .choose .type-card__content {

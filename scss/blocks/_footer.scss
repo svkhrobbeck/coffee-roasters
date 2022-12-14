@@ -39,7 +39,7 @@
       line-height: 15px;
       letter-spacing: 0.9px;
       text-transform: uppercase;
-      transition: 0.3s ease;
+      transition: color 0.3s ease;
 
       &:hover {
         color: $light;
@@ -53,6 +53,7 @@
 
       svg {
         color: $light;
+        transition: color 0.4s ease;
 
         &:hover {
           color: $primary-orange;

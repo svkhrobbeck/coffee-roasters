@@ -36,6 +36,7 @@
       line-height: 32px;
       color: $primary-grey;
       opacity: 0.5;
+      transition: opacity 0.4s ease;
 
       span {
         white-space: nowrap;
@@ -134,22 +135,26 @@
 
   .type-card__input:checked + .type-card__content {
     background-color: $primary-green;
-    transition: 0.3s ease;
 
     span {
-      transition: 0.3s ease;
+      transition: color 0.3s ease;
       color: $white;
     }
   }
 
   .type-card__content {
     max-width: 228px;
+    transition: color 0.3s ease, background-color 0.3s ease;
     height: auto;
     padding: 32px 25px 84px;
     border-radius: 8px;
     background-color: $capsule-color;
     display: inline-flex;
     flex-direction: column;
+
+    &:hover {
+      background-color: $primary-orange;
+    }
 
     @media only screen and (max-width: $mobile) {
       width: 100%;
