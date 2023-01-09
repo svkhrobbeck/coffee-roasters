@@ -120,15 +120,8 @@ body {
     justify-content: center;
   }
 }
-.main-header .header-block .logo {
-  position: relative;
-  z-index: 101;
-}
 @media only screen and (max-width: 576px) {
   .main-header .header-block .logo {
-    background-color: #FFFFFF;
-    width: 100%;
-    padding: 20px 0;
     text-align: center;
   }
 }

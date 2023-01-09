@@ -24,13 +24,8 @@
     }
 
     .logo {
-      position: relative;
-      z-index: 101;
 
       @media only screen and (max-width: $mobile) {
-        background-color: $white;
-        width: 100%;
-        padding: 20px 0;
         text-align: center;
       }
 
