@@ -1,11 +1,11 @@
 .about-us {
-  background: url(../../img/about-us.png) no-repeat center;
+  background: url(../img/about-us.png) no-repeat center;
   width: 100%;
   background-size: contain;
   height: 425px;
   padding: 100px 0 0 85px;
 
-  @media only screen and (max-width: $tablet-l) {
+  @media only screen and (max-width: $desktop) {
     height: 420px;
     background-size: cover;
     border-radius: 10px;

@@ -208,13 +208,13 @@ body {
 }
 
 .hero {
-  background: url(../../img/hero-bg.png) no-repeat center;
+  background: url(../img/hero-bg.png) no-repeat center;
   width: 100%;
   background-size: contain;
   height: 565px;
   padding: 100px 0 0 85px;
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1200px) {
   .hero {
     height: 420px;
     background-size: cover;
@@ -757,13 +757,13 @@ body {
 }
 
 .about-us {
-  background: url(../../img/about-us.png) no-repeat center;
+  background: url(../img/about-us.png) no-repeat center;
   width: 100%;
   background-size: contain;
   height: 425px;
   padding: 100px 0 0 85px;
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1200px) {
   .about-us {
     height: 420px;
     background-size: cover;
@@ -1177,13 +1177,13 @@ body {
 }
 
 .create-plan {
-  background: url(../../img/plan-bg.png) no-repeat center;
+  background: url(../img/plan-bg.png) no-repeat center;
   width: 100%;
   background-size: contain;
   height: 425px;
   padding: 100px 0 0 85px;
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1200px) {
   .create-plan {
     height: 420px;
     background-size: cover;
