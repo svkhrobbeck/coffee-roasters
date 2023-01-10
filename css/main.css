@@ -1,28 +1,21 @@
-@font-face {
-  font-family: "Fraunces";
-  src: url("../../fonts/") format("woff2"), url("../../fonts/Fraunces9pt-Black.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Barlow";
-  src: url("../../fonts/Barlow-Regular.woff2") format("woff2"), url("../../fonts/Barlow-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Barlow";
-  src: url("../../fonts/Barlow-Bold.woff2") format("woff2"), url("../../fonts/Barlow-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-* {
+/* GENERAL */
+html {
   box-sizing: border-box;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+* {
   margin: 0;
   padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 *:focus {
@@ -30,25 +23,19 @@
   outline: 2px dotted #000000;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: "Fraunces", "Barlow";
 }
 
+/* CONTAINER */
 .container {
-  max-width: 1200px;
+  max-width: 1230px;
+  width: 100%;
+  padding: 0 15px;
   margin: 0 auto;
 }
-@media only screen and (max-width: 992px) {
-  .container {
-    max-width: 992px;
-    padding: 0 20px;
-  }
-}
 
+/* VISUALLY HIDDEN */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -63,6 +50,7 @@ body {
   overflow: hidden;
 }
 
+/* BUTTON */
 #primary-btn {
   background: #0E8784;
   border-radius: 6px;
@@ -214,7 +202,7 @@ body {
   height: 565px;
   padding: 100px 0 0 85px;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1230px) {
   .hero {
     height: 420px;
     background-size: cover;
@@ -763,7 +751,7 @@ body {
   height: 425px;
   padding: 100px 0 0 85px;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1230px) {
   .about-us {
     height: 420px;
     background-size: cover;
@@ -1183,7 +1171,7 @@ body {
   height: 425px;
   padding: 100px 0 0 85px;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1230px) {
   .create-plan {
     height: 420px;
     background-size: cover;

@@ -1,36 +1,21 @@
-// Fonts
-@font-face {
-  font-family: "Fraunces";
-  src: url("../../fonts/") format("woff2"),
-    url("../../fonts/Fraunces9pt-Black.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Barlow";
-  src: url("../../fonts/Barlow-Regular.woff2") format("woff2"),
-    url("../../fonts/Barlow-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Barlow";
-  src: url("../../fonts/Barlow-Bold.woff2") format("woff2"),
-    url("../../fonts/Barlow-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-// Common styles
-* {
+/* GENERAL */
+html {
   box-sizing: border-box;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+* {
   margin: 0;
   padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 *:focus {
@@ -38,24 +23,19 @@
   outline: 2px dotted $black;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: "Fraunces", "Barlow";
 }
 
+/* CONTAINER */
 .container {
   max-width: $desktop;
+  width: 100%;
+  padding: 0 15px;
   margin: 0 auto;
-
-  @media only screen and (max-width: $tablet-l) {
-    max-width: $tablet-l;
-    padding: 0 20px;
-  }
 }
 
+/* VISUALLY HIDDEN */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -69,6 +49,7 @@ body {
   overflow: hidden;
 }
 
+/* BUTTON */
 #primary-btn {
   background: $primary-green;
   border-radius: 6px;
