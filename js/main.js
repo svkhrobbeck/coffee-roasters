@@ -1,9 +1,9 @@
 document.addEventListener("click", (evt) => {
-  navToggleClick(evt);
   toggleAccordion(evt);
   modalCloseClick(evt);
   modalOutsideCloseClick(evt);
   modalOpenClick(evt);
+  navToggleClick(evt);
 });
 
 function navToggleClick(evt) {
