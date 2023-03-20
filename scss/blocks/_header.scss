@@ -9,10 +9,6 @@
     position: static;
     z-index: 1;
   }
-
-  @media only screen and (max-width: $mobile) {
-    padding: 0;
-  }
 }
 
 .header-block {
@@ -24,12 +20,15 @@
 }
 
 .logo {
-  @media only screen and (max-width: $mobile) {
-    text-align: center;
-  }
+  display: flex;
 
   &__img {
+    max-width: 228px;
     width: 100%;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    text-align: center;
   }
 }
 
@@ -81,7 +80,7 @@
   @media only screen and (max-width: $mobile) {
     position: absolute;
     z-index: 20;
-    top: 79px;
+    top: 65px;
     left: 0;
     width: 100%;
     background: linear-gradient(
