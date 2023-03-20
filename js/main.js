@@ -52,7 +52,10 @@ function modalOutsideCloseClick(evt) {
   if (el.matches("[data-modal-inner]")) return;
 
   document.body.classList.remove("blocked");
-  el.classList.remove("show");
+  if (el.classList.contains("show")) {
+    el.classList.remove("show");
+    el.previousElementSibling.classList.remove("show");
+  }
 }
 
 function modalOpenClick(evt) {
@@ -68,10 +71,13 @@ function modalOpenClick(evt) {
 
 function responsiveText() {
   const el = document.querySelector("[data-modal-checkout]");
-  if (window.innerWidth < 576) {
-    el.textContent = "Checkout - $14.00 / mo";
-  } else if (window.innerWidth > 576) {
-    el.textContent = "Checkout";
+
+  if (el) {
+    if (window.innerWidth < 576) {
+      el.textContent = "Checkout - $14.00 / mo";
+    } else if (window.innerWidth > 576) {
+      el.textContent = "Checkout";
+    }
   }
 }
 
