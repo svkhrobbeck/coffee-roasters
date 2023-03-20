@@ -49,13 +49,11 @@ function modalCloseClick(evt) {
 function modalOutsideCloseClick(evt) {
   const el = evt.target;
 
-  if (el.matches("[data-modal-inner]")) return;
+  if (!el.matches("[data-modal]")) return;
 
+  el.classList.remove("show");
+  el.previousElementSibling.classList.remove("show");
   document.body.classList.remove("blocked");
-  if (el.classList.contains("show")) {
-    el.classList.remove("show");
-    el.previousElementSibling.classList.remove("show");
-  }
 }
 
 function modalOpenClick(evt) {
