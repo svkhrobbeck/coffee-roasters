@@ -1,59 +1,79 @@
-// preferences
-var elPreferences = document.querySelector("[data-preferences]");
-var elBoxPreferences = document.querySelector("[data-preferences-box]");
-var elArrowPreferences = document.querySelector("[data-preferences-arrow]");
-elArrowPreferences.classList.add("rotate");
-elBoxPreferences.classList.add("visually-hidden");
-
-elPreferences.addEventListener("click", () => {
-  elArrowPreferences.classList.toggle("rotate");
-  elBoxPreferences.classList.toggle("visually-hidden");
+document.addEventListener("click", (evt) => {
+  navToggleClick(evt);
+  toggleAccordion(evt);
+  modalCloseClick(evt);
+  modalOutsideCloseClick(evt);
+  modalOpenClick(evt);
 });
 
-// BeanType
-var elBeanType = document.querySelector("[data-bean-type]");
-var elBoxBean = document.querySelector("[data-bean-box]");
-var elArrowBean = document.querySelector("[data-bean-arrow]");
-elArrowBean.classList.add("rotate");
-elBoxBean.classList.add("visually-hidden");
+function navToggleClick(evt) {
+  const el = evt.target.closest("[data-nav-toggler]");
 
-elBeanType.addEventListener("click", () => {
-  elArrowBean.classList.toggle("rotate");
-  elBoxBean.classList.toggle("visually-hidden");
-});
+  if (!el) return;
 
-// Quantity
-var elQuantity = document.querySelector("[data-quantity]");
-var elQuantityBox = document.querySelector("[data-quantity-box]");
-var elQuantityArrow = document.querySelector("[data-quantity-arrow]");
-elQuantityArrow.classList.add("rotate");
-elQuantityBox.classList.add("visually-hidden");
+  const elSelector = el.dataset.navToggler;
 
-elQuantity.addEventListener("click", () => {
-  elQuantityArrow.classList.toggle("rotate");
-  elQuantityBox.classList.toggle("visually-hidden");
-});
+  document.querySelector(`[${elSelector}]`).classList.toggle("show");
+  document.body.classList.toggle("blocked");
+  el.classList.toggle("show");
+}
 
-// GrindOption
-var elGrindOption = document.querySelector("[data-grind]");
-var elGrindArrow = document.querySelector("[data-grind-arrow]");
-var elGrindBox = document.querySelector("[data-grind-box]");
-elGrindArrow.classList.add("rotate");
-elGrindBox.classList.add("visually-hidden");
+function toggleAccordion(evt) {
+  const el = evt.target.closest("[data-type-content]");
 
-elGrindOption.addEventListener("click", () => {
-  elGrindArrow.classList.toggle("rotate");
-  elGrindBox.classList.toggle("visually-hidden");
-});
+  if (!el) return;
 
-// Deliveries
-var elDeliveries = document.querySelector("[data-deliveries]");
-var elDeliveriesArrow = document.querySelector("[data-deliveries-arrow]");
-var elDeliveriesBox = document.querySelector("[data-deliveries-box]");
-elDeliveriesArrow.classList.add("rotate");
-elDeliveriesBox.classList.add("visually-hidden");
+  addVisuallyHidden();
+  el.querySelector("img").classList.toggle("rotate");
+  el.nextElementSibling.classList.remove("visually-hidden");
+}
 
-elDeliveries.addEventListener("click", () => {
-  elDeliveriesArrow.classList.toggle("rotate");
-  elDeliveriesBox.classList.toggle("visually-hidden");
-});
+function addVisuallyHidden() {
+  const els = document.querySelectorAll("[data-type-content]");
+
+  els.forEach((item) => {
+    item.querySelector("img").classList.remove("rotate");
+    item.nextElementSibling.classList.add("visually-hidden");
+  });
+}
+
+function modalCloseClick(evt) {
+  const el = evt.target.closest("[data-modal-checkout]");
+
+  if (!el) return;
+
+  document.body.classList.remove("blocked");
+  el.parentElement.parentElement.parentElement.classList.remove("show");
+}
+
+function modalOutsideCloseClick(evt) {
+  const el = evt.target;
+
+  if (el.matches("[data-modal-inner]")) return;
+
+  document.body.classList.remove("blocked");
+  el.classList.remove("show");
+}
+
+function modalOpenClick(evt) {
+  const el = evt.target.closest("[data-modal-open]");
+
+  if (!el) return;
+
+  const elSelector = el.dataset.modalOpen;
+
+  document.body.classList.add("blocked");
+  document.querySelector(elSelector).classList.add("show");
+}
+
+function responsiveText() {
+  const el = document.querySelector("[data-modal-checkout]");
+  if (window.innerWidth < 576) {
+    el.textContent = "Checkout - $14.00 / mo";
+  } else if (window.innerWidth > 576) {
+    el.textContent = "Checkout";
+  }
+}
+
+responsiveText();
+document.addEventListener("resize", () => responsiveText());

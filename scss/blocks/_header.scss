@@ -13,113 +13,135 @@
   @media only screen and (max-width: $mobile) {
     padding: 0;
   }
+}
 
-  .header-block {
+.header-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 30px;
+}
+
+.logo {
+  @media only screen and (max-width: $mobile) {
+    text-align: center;
+  }
+
+  &__img {
+    width: 100%;
+  }
+}
+
+.nav-toggler {
+  border: none;
+  background-color: transparent;
+  flex-direction: column;
+  gap: 3px 0;
+  display: none;
+
+  @media only screen and (max-width: $mobile) {
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    width: 16px;
+    height: 16px;
+    position: relative;
+  }
 
-    @media only screen and (max-width: $mobile) {
-      justify-content: center;
-    }
+  &.show {
+    .nav-toggler__inner {
+      position: absolute;
 
-    .logo {
-
-      @media only screen and (max-width: $mobile) {
-        text-align: center;
+      &:first-child {
+        transform: rotateZ(135deg);
       }
 
-      &__img {
-        width: 100%;
+      &:nth-child(2) {
+        opacity: 0;
       }
-    }
 
-    #hamburger {
-      @media only screen and (max-width: $mobile) {
-        &:checked ~ .nav .nav__list {
-          transform: translate(0);
-        }
-
-        &:checked + .hamburger #menu {
-          display: none;
-        }
-
-        &:checked + .hamburger #close {
-          display: block;
-        }
+      &:last-child {
+        transform: rotateZ(-135deg);
       }
     }
+  }
+}
 
-    #close,
-    #menu {
-      color: $black;
-      background-color: $white;
-      border-radius: 5px;
-      font-size: 40px;
-      position: fixed;
-      top: 20px;
-      left: 10px;
-      z-index: 101;
-      display: none;
-    }
+.nav-toggler__inner {
+  display: inline-block;
+  background-color: #333d4b;
+  width: 16px;
+  height: 3px;
+  border-radius: 1.5px;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
 
-    #menu {
-      @media only screen and (max-width: $mobile) {
-        display: block;
-      }
-    }
+.nav {
+  @media only screen and (max-width: $mobile) {
+    position: absolute;
+    z-index: 20;
+    top: 79px;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(
+      to bottom,
+      #fefcf7 30%,
+      rgba(254, 252, 247, 0.504981) 55%
+    );
+    height: 100vh;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+  }
 
-    .nav__list {
-      display: flex;
-      align-items: center;
-      gap: 33px;
-      list-style-type: none;
+  &.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
 
-      @media only screen and (max-width: $mobile) {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-        position: fixed;
-        top: 0;
-        left: 0;
-        transform: translate(-140%);
-        z-index: 100;
-        background-color: $white;
-        height: 100vh;
-        width: 65%;
-        padding: 90px 0 0 20px;
-        transition: transform 1s ease;
-        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
-          rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-      }
-    }
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: 33px;
+  font-family: "Barlow", "Roboto", sans-serif;
+  list-style-type: none;
 
-    .nav__link {
-      text-decoration: none;
-      font: 14px "Barlow";
-      font-weight: 700;
-      line-height: 15px;
-      letter-spacing: 0.9px;
-      text-transform: uppercase;
-      color: $lighter-grey;
-      transition: color 0.3s ease;
+  @media only screen and (max-width: $mobile) {
+    font-family: "Fraunces", "Roboto", sans-serif;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    text-align: center;
+  }
+}
 
-      &--checked {
-        color: $black;
-      }
+.nav__link {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+  color: $lighter-grey;
+  transition: color 0.3s ease;
 
-      &:hover,
-      &:focus {
-        color: $black;
-      }
+  &--checked {
+    color: $black;
+  }
 
-      @media only screen and (max-width: $tablet) {
-        font-size: 13px;
-      }
+  &:hover,
+  &:focus {
+    color: $black;
+  }
 
-      @media only screen and (max-width: $mobile) {
-        font-size: 17px;
-      }
-    }
+  @media only screen and (max-width: $tablet) {
+    font-size: 13px;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    font-size: 24px;
+    text-transform: capitalize;
   }
 }

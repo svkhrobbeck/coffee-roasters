@@ -38,14 +38,14 @@
             </h1>
           </div>
 
-          <input type="checkbox" id="hamburger" class="visually-hidden" />
-          <label for="hamburger" class="hamburger">
-            <i class="bx bx-x" id="close"></i>
-            <i class="bx bx-menu" id="menu"></i>
-          </label>
+          <button class="nav-toggler" data-nav-toggler="data-nav">
+            <span class="nav-toggler__inner"></span>
+            <span class="nav-toggler__inner"></span>
+            <span class="nav-toggler__inner"></span>
+          </button>
 
           <!-- Navigation -->
-          <nav class="nav">
+          <nav class="nav" data-nav>
             <ul class="nav__list">
               <li class="nav__item">
                 <a href="index.html" class="nav__link">Home</a>
@@ -163,20 +163,19 @@
               </ul>
             </div>
             <div class="choose-types">
-              <div class="choose-type" id="preferences" data-preferences>
-                <div class="choose-type-content">
+              <div class="choose-type" id="preferences">
+                <div class="choose-type-content" data-type-content>
                   <h2 class="choose-type__title">
                     How do you drink your coffee?
                   </h2>
                   <img
+                    class="choose-type__img rotate"
                     src="./img/top-arrow-icon.svg"
                     alt="arrow"
                     width="24"
-                    data-preferences-arrow
-                    class="choose-type__img"
                   />
                 </div>
-                <div class="type-cards" data-preferences-box>
+                <div class="type-cards">
                   <div class="type-card">
                     <input
                       type="radio"
@@ -224,18 +223,17 @@
                   </div>
                 </div>
               </div>
-              <div class="choose-type" id="bean-type" data-bean-type>
-                <div class="choose-type-content">
+              <div class="choose-type" id="bean-type">
+                <div class="choose-type-content" data-type-content>
                   <h2 class="choose-type__title">What type of coffee?</h2>
                   <img
                     src="./img/top-arrow-icon.svg"
                     alt="arrow"
                     width="24"
-                    data-bean-arrow
                     class="choose-type__img"
                   />
                 </div>
-                <div class="type-cards" data-bean-box>
+                <div class="type-cards visually-hidden">
                   <div class="type-card">
                     <input
                       type="radio"
@@ -283,18 +281,17 @@
                   </div>
                 </div>
               </div>
-              <div class="choose-type" id="quantity" data-quantity>
-                <div class="choose-type-content">
+              <div class="choose-type" id="quantity">
+                <div class="choose-type-content" data-type-content>
                   <h2 class="choose-type__title">How much would you like?</h2>
                   <img
                     src="./img/top-arrow-icon.svg"
                     alt="arrow"
                     width="24"
-                    data-quantity-arrow
                     class="choose-type__img"
                   />
                 </div>
-                <div class="type-cards" data-quantity-box>
+                <div class="type-cards visually-hidden">
                   <div class="type-card">
                     <input
                       type="radio"
@@ -342,18 +339,17 @@
                   </div>
                 </div>
               </div>
-              <div class="choose-type" id="grind-option" data-grind>
-                <div class="choose-type-content">
+              <div class="choose-type" id="grind-option">
+                <div class="choose-type-content" data-type-content>
                   <h2 class="choose-type__title">Want us to grind them?</h2>
                   <img
                     src="./img/top-arrow-icon.svg"
                     alt="arrow"
                     width="24"
-                    data-grind-arrow
                     class="choose-type__img"
                   />
                 </div>
-                <div class="type-cards" data-grind-box>
+                <div class="type-cards visually-hidden">
                   <div class="type-card">
                     <input
                       type="radio"
@@ -401,8 +397,8 @@
                   </div>
                 </div>
               </div>
-              <div class="choose-type" id="deliveries" data-deliveries>
-                <div class="choose-type-content">
+              <div class="choose-type" id="deliveries">
+                <div class="choose-type-content" data-type-content>
                   <h2 class="choose-type__title">
                     How often should we deliver?
                   </h2>
@@ -410,11 +406,10 @@
                     src="./img/top-arrow-icon.svg"
                     alt="arrow"
                     width="24"
-                    data-deliveries-arrow
                     class="choose-type__img"
                   />
                 </div>
-                <div class="type-cards" data-deliveries-box>
+                <div class="type-cards visually-hidden">
                   <div class="type-card">
                     <input
                       type="radio"
@@ -473,7 +468,9 @@
                 </p>
               </div>
               <div class="choose-types-link">
-                <a href="create-plan.html" id="primary-btn">Create my plan!</a>
+                <button class="primary-btn" data-modal-open="#modal">
+                  Create my plan!
+                </button>
               </div>
             </div>
           </div>
@@ -562,6 +559,35 @@
       </div>
     </footer>
     <!-- /Footer -->
+
+    <!-- MODAL -->
+    <div class="modal" id="modal" data-modal>
+      <div class="modal__inner inner-modal" data-modal-inner>
+        <header class="inner-modal__header">
+          <h2 class="inner-modal__title">Order Summary</h2>
+        </header>
+        <div class="inner-modal__content">
+          <p class="inner-modal__summary-text">
+            “I drink my coffee as <a href="#filter">Filter</a>, with a
+            <a href="#decaf">Decaf</a> type of bean. <a href="#">250g</a> ground
+            ala <a href="#cafetiere">Cafetiére</a>, sent to me
+            <a href="#every-week">Every Week</a>.”
+          </p>
+          <p class="inner-modal__desc">
+            Is this correct? You can proceed to checkout or go back to plan
+            selection if something is off. Subscription discount codes can also
+            be redeemed at the checkout.
+          </p>
+        </div>
+        <footer class="inner-modal__footer">
+          <p class="inner-modal__coffee-price">$14.00/ mo</p>
+          <button class="inner-modal__checkout-btn primary-btn" data-modal-checkout>
+            Checkout
+          </button>
+        </footer>
+      </div>
+    </div>
+    <!-- /MODAL -->
 
     <script src="./js/main.js"></script>
   </body>

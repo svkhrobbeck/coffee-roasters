@@ -82,13 +82,16 @@
     }
 
     &__img {
+      transition: transform 0.2s ease;
+
       @media (max-width: $mobile) {
         max-width: 18px;
       }
-    }
-    .rotate {
-      transition: 0.2s ease;
-      transform: rotate(180deg);
+
+      &.rotate {
+        transition: transform 0.2s ease;
+        transform: rotate(180deg);
+      }
     }
 
     &__title {

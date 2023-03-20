@@ -1,0 +1,87 @@
+.modal {
+  position: fixed;
+  z-index: 100;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+
+  &.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+.inner-modal {
+  max-width: 540px;
+  width: 100%;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.inner-modal__header {
+  padding: 48px 56px 40px;
+  background-color: #333d4b;
+  color: $white;
+}
+
+.inner-modal__title {
+  font-size: 40px;
+  line-height: 1.2;
+
+  @media only screen and (max-width: $mobile) {
+    font-size: 28px;
+  }
+}
+
+.inner-modal__content {
+  padding: 40px 56px;
+}
+
+.inner-modal__summary-text {
+  color: $lighter-grey;
+  font-size: 24px;
+  line-height: 1.6;
+  margin-bottom: 7px;
+
+  a {
+    color: $primary-green;
+  }
+}
+
+.inner-modal__desc {
+  font: 16px "Barlow";
+  font-weight: 400;
+  line-height: 1.5;
+  color: $primary-grey;
+
+  @media only screen and (max-width: $mobile) {
+    font-size: 15px;
+  }
+}
+
+.inner-modal__footer {
+  padding: 0 56px 56px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.inner-modal__coffee-price {
+  font-size: 32px;
+  line-height: 1.2;
+
+  @media only screen and (max-width: $mobile) {
+    display: none;
+  }
+}
+
+.inner-modal__checkout-btn {
+  flex-grow: 1;
+}

@@ -38,14 +38,14 @@
             </h1>
           </div>
 
-          <input type="checkbox" id="hamburger" class="visually-hidden" />
-          <label for="hamburger" class="hamburger">
-            <i class="bx bx-x" id="close"></i>
-            <i class="bx bx-menu" id="menu"></i>
-          </label>
+          <button class="nav-toggler" data-nav-toggler="data-nav">
+            <span class="nav-toggler__inner"></span>
+            <span class="nav-toggler__inner"></span>
+            <span class="nav-toggler__inner"></span>
+          </button>
 
           <!-- Navigation -->
-          <nav class="nav">
+          <nav class="nav" data-nav>
             <ul class="nav__list">
               <li class="nav__item">
                 <a href="index.html" class="nav__link">Home</a>
@@ -284,5 +284,7 @@
       </div>
     </footer>
     <!-- /Footer -->
+
+    <script src="js/main.js"></script>
   </body>
 </html>
