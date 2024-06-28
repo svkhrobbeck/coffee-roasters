@@ -1,25 +1,24 @@
 // Commons
-@import "./variables";
-@import "./mixins";
-@import "./fonts";
+@import "variables";
+@import "fonts";
 // Blocks
-@import "./blocks/common";
-@import "./blocks/modal";
-@import "./blocks/header";
-@import "./blocks/hero";
-@import "./blocks/collection";
-@import "./blocks/features";
-@import "./blocks/instructions";
-@import "./blocks/footer";
+@import "blocks/common";
+@import "blocks/modal";
+@import "blocks/header";
+@import "blocks/hero";
+@import "blocks/collection";
+@import "blocks/features";
+@import "blocks/instructions";
+@import "blocks/footer";
 
 // about-us
-@import "./blocks/about-us";
-@import "./blocks/commitment";
-@import "./blocks/quality";
-@import "./blocks/address";
-@import "./blocks/footer";
+@import "blocks/about-us";
+@import "blocks/commitment";
+@import "blocks/quality";
+@import "blocks/address";
+@import "blocks/footer";
 
 // create a plan
-@import "./blocks/create-plan";
-@import "./blocks/prepare";
-@import "./blocks/choose";
+@import "blocks/create-plan";
+@import "blocks/prepare";
+@import "blocks/choose";

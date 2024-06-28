@@ -1,4 +1,4 @@
-document.addEventListener("click", (evt) => {
+document.addEventListener("click", evt => {
   toggleAccordion(evt);
   modalCloseClick(evt);
   modalOutsideCloseClick(evt);
@@ -31,7 +31,7 @@ function toggleAccordion(evt) {
 function addVisuallyHidden() {
   const els = document.querySelectorAll("[data-type-content]");
 
-  els.forEach((item) => {
+  els.forEach(item => {
     item.querySelector("img").classList.remove("rotate");
     item.nextElementSibling.classList.add("visually-hidden");
   });
